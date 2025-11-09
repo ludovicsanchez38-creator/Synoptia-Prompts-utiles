@@ -202,6 +202,8 @@ Merci à toute la communauté d'IA et de prompt engineering pour le partage de c
 ## 📞 Contact
 
 Pour questions, suggestions ou collaborations :
+- **Email** : ludo@synoptia.fr
+- **Entreprise** : Synoptia
 - Créez une issue sur GitHub
 - Soumettez une Pull Request
 - Partagez avec la communauté
@@ -210,4 +212,4 @@ Pour questions, suggestions ou collaborations :
 
 **⭐ Si vous trouvez ce projet utile, n'hésitez pas à lui donner une étoile!**
 
-Fait avec ❤️ pour la communauté AI
+Développé par **Synoptia** avec ❤️ pour la communauté AI
