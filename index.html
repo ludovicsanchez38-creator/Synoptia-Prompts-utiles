@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Prompts Library - 1000+ Best AI Prompts by Category</title>
+    <meta name="description" content="Discover 1000+ carefully curated AI prompts organized by category for ChatGPT, Claude, and other AI models. Browse, search, and copy the best prompts for development, marketing, writing, business, and more.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="main-title">
+                    <span class="title-icon">🚀</span>
+                    Top Prompts Library
+                </h1>
+                <p class="subtitle">1000+ Best AI Prompts Organized by Category</p>
+                <p class="description">Carefully curated prompts for ChatGPT, Claude, and other AI models</p>
+            </div>
+        </header>
+
+        <!-- Search and Filter Section -->
+        <section class="controls-section">
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="searchInput"
+                    class="search-input"
+                    placeholder="🔍 Search prompts by title, description, or tags..."
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="categoryFilter" class="filter-label">Category:</label>
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">All Categories</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="difficultyFilter" class="filter-label">Difficulty:</label>
+                    <select id="difficultyFilter" class="filter-select">
+                        <option value="all">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <button id="resetFilters" class="btn-reset">Reset Filters</button>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalPrompts">0</span>
+                    <span class="stat-label">Total Prompts</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="displayedPrompts">0</span>
+                    <span class="stat-label">Displayed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="totalCategories">0</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Navigation -->
+        <nav class="categories-nav" id="categoriesNav">
+            <!-- Categories will be dynamically inserted here -->
+        </nav>
+
+        <!-- Prompts Display Section -->
+        <main class="prompts-section" id="promptsSection">
+            <!-- Category sections will be dynamically inserted here -->
+        </main>
+
+        <!-- Loading State -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading prompts...</p>
+        </div>
+
+        <!-- No Results State -->
+        <div class="no-results hidden" id="noResults">
+            <div class="no-results-icon">🔍</div>
+            <h2>No prompts found</h2>
+            <p>Try adjusting your search terms or filters</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Top Prompts Library - Curated AI Prompts for Everyone</p>
+            <p class="footer-links">
+                <a href="https://github.com" target="_blank">GitHub</a> •
+                <a href="#" onclick="scrollToTop()">Back to Top</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Prompt Modal -->
+    <div class="modal hidden" id="promptModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-description" id="modalDescription"></p>
+            <div class="modal-tags" id="modalTags"></div>
+            <div class="modal-difficulty" id="modalDifficulty"></div>
+            <div class="prompt-display">
+                <pre class="prompt-text" id="modalPromptText"></pre>
+                <button class="btn-copy" onclick="copyPromptText()">
+                    <span class="copy-icon">📋</span>
+                    Copy Prompt
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast hidden" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message">Prompt copied to clipboard!</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

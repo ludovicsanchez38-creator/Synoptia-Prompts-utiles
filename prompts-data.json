@@ -1,0 +1,948 @@
+{
+  "categories": [
+    {
+      "id": "development",
+      "name": "Development & Coding",
+      "icon": "💻",
+      "description": "Prompts for software development, debugging, code review, and technical tasks",
+      "prompts": [
+        {
+          "id": "dev001",
+          "title": "Senior Software Engineer",
+          "description": "Act as an expert software engineer for code generation",
+          "prompt": "You are a senior software engineer with expertise in [LANGUAGE/FRAMEWORK]. Generate clean, efficient, and well-documented code to solve the following problem: [PROBLEM DESCRIPTION]. Follow best practices, include error handling, and provide step-by-step explanations of your approach.",
+          "tags": ["coding", "development", "architecture"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "dev002",
+          "title": "Code Reviewer",
+          "description": "Professional code review and optimization",
+          "prompt": "You are a professional code reviewer with expertise in writing clean, efficient, and maintainable code. Review the following code in [LANGUAGE]:\n\n[CODE]\n\nProvide: 1) Identified bugs and issues 2) Security vulnerabilities 3) Performance improvements 4) Best practice recommendations 5) Refactored code with detailed explanations",
+          "tags": ["code-review", "optimization", "security"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "dev003",
+          "title": "Debugging Assistant",
+          "description": "Debug and fix code errors",
+          "prompt": "I'm encountering the following error in my [LANGUAGE] code:\n\nError: [ERROR MESSAGE]\n\nCode:\n[CODE SNIPPET]\n\nPlease: 1) Explain what this error means 2) Identify the root cause 3) Provide a fixed version of the code 4) Suggest how to prevent similar errors in the future",
+          "tags": ["debugging", "troubleshooting", "error-fixing"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "dev004",
+          "title": "API Developer",
+          "description": "Design and implement RESTful APIs",
+          "prompt": "You are an expert API architect. Design a RESTful API for [APPLICATION/SERVICE] that needs to [REQUIREMENTS]. Provide: 1) Endpoint structure 2) HTTP methods and routes 3) Request/response schemas 4) Authentication approach 5) Error handling strategy 6) Sample code implementation in [LANGUAGE/FRAMEWORK]",
+          "tags": ["api", "backend", "rest"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "dev005",
+          "title": "Algorithm Optimizer",
+          "description": "Optimize algorithms for better performance",
+          "prompt": "Analyze the following algorithm for [PROBLEM]:\n\n[CODE]\n\nProvide: 1) Time and space complexity analysis 2) Bottlenecks identification 3) Optimized version with better complexity 4) Explanation of optimization techniques used 5) Trade-offs between different approaches",
+          "tags": ["algorithms", "optimization", "performance"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "dev006",
+          "title": "Database Schema Designer",
+          "description": "Design efficient database schemas",
+          "prompt": "You are a database architect specializing in [SQL/NoSQL]. Design a database schema for [APPLICATION] that needs to handle [REQUIREMENTS]. Include: 1) Entity-relationship diagram 2) Table structures with fields and data types 3) Indexes for optimization 4) Relationships and constraints 5) Sample queries for common operations 6) Scalability considerations",
+          "tags": ["database", "sql", "schema-design"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "dev007",
+          "title": "Test-Driven Development",
+          "description": "Generate comprehensive unit tests",
+          "prompt": "You are a QA engineer expert in test-driven development. For the following [LANGUAGE] code:\n\n[CODE]\n\nGenerate: 1) Comprehensive unit tests covering edge cases 2) Integration tests 3) Mock data and fixtures 4) Test documentation 5) Code coverage analysis. Use [TESTING FRAMEWORK]",
+          "tags": ["testing", "tdd", "quality-assurance"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "dev008",
+          "title": "DevOps Engineer",
+          "description": "Create CI/CD pipelines and infrastructure",
+          "prompt": "You are a DevOps engineer. Create a complete CI/CD pipeline for [PROJECT] using [TOOLS/PLATFORM]. Include: 1) Pipeline configuration file 2) Build stages 3) Testing automation 4) Deployment strategy 5) Environment configuration 6) Monitoring and logging setup 7) Rollback procedures",
+          "tags": ["devops", "ci-cd", "infrastructure"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "dev009",
+          "title": "Security Auditor",
+          "description": "Perform security audits and identify vulnerabilities",
+          "prompt": "You are a cybersecurity expert. Audit the following code/system for security vulnerabilities:\n\n[CODE/SYSTEM DESCRIPTION]\n\nProvide: 1) OWASP Top 10 vulnerability assessment 2) Identified security risks 3) Exploitation scenarios 4) Remediation recommendations 5) Secure code examples 6) Security best practices checklist",
+          "tags": ["security", "audit", "vulnerabilities"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "dev010",
+          "title": "Frontend Developer",
+          "description": "Create responsive UI components",
+          "prompt": "You are an expert frontend developer specializing in [REACT/VUE/ANGULAR]. Create a [COMPONENT] that [REQUIREMENTS]. Include: 1) Component code with TypeScript 2) Styling with [CSS/SCSS/TAILWIND] 3) Props and state management 4) Accessibility features (ARIA) 5) Responsive design 6) Usage examples",
+          "tags": ["frontend", "ui", "components"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "dev011",
+          "title": "Mobile App Developer",
+          "description": "Develop cross-platform mobile applications",
+          "prompt": "You are a mobile app developer expert in [REACT NATIVE/FLUTTER/NATIVE]. Create a mobile [FEATURE/SCREEN] for [APP TYPE] that includes: 1) Complete implementation code 2) Navigation setup 3) State management 4) API integration 5) Platform-specific considerations 6) Performance optimization 7) Offline functionality",
+          "tags": ["mobile", "ios", "android"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "dev012",
+          "title": "Microservices Architect",
+          "description": "Design microservices architecture",
+          "prompt": "You are a microservices architect. Design a microservices architecture for [APPLICATION] that handles [REQUIREMENTS]. Provide: 1) Service boundaries and responsibilities 2) Communication patterns (sync/async) 3) Data management strategy 4) Service discovery and load balancing 5) Fault tolerance and resilience 6) Deployment architecture diagram 7) Technology stack recommendations",
+          "tags": ["microservices", "architecture", "distributed-systems"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "dev013",
+          "title": "Performance Profiler",
+          "description": "Analyze and improve application performance",
+          "prompt": "Analyze the performance of this [LANGUAGE/FRAMEWORK] application:\n\n[CODE/DESCRIPTION]\n\nProvide: 1) Performance bottlenecks identification 2) Memory usage analysis 3) CPU profiling insights 4) Network optimization opportunities 5) Caching strategies 6) Code optimizations with benchmarks 7) Monitoring recommendations",
+          "tags": ["performance", "optimization", "profiling"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "dev014",
+          "title": "Documentation Writer",
+          "description": "Create technical documentation",
+          "prompt": "You are a technical writer. Create comprehensive documentation for [PROJECT/CODE/API]. Include: 1) Overview and introduction 2) Installation and setup guide 3) API reference with examples 4) Usage tutorials 5) Configuration options 6) Troubleshooting guide 7) Contributing guidelines 8) Code examples in multiple languages",
+          "tags": ["documentation", "technical-writing", "api-docs"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "dev015",
+          "title": "Refactoring Expert",
+          "description": "Refactor legacy code for better maintainability",
+          "prompt": "You are a refactoring expert. The following [LANGUAGE] code needs refactoring:\n\n[LEGACY CODE]\n\nRefactor this code following: 1) SOLID principles 2) Design patterns where appropriate 3) Improved naming conventions 4) Better code organization 5) Removal of code smells 6) Comprehensive comments explaining changes 7) Before/after comparison",
+          "tags": ["refactoring", "clean-code", "design-patterns"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "dev016",
+          "title": "Git Workflow Expert",
+          "description": "Establish git workflows and version control best practices",
+          "prompt": "You are a Git expert. Design a Git workflow strategy for [TEAM SIZE/PROJECT TYPE]. Include: 1) Branching strategy (GitFlow/GitHub Flow/etc) 2) Commit message conventions 3) PR review process 4) Merge strategies 5) Release management 6) Hotfix procedures 7) Example commands and scripts",
+          "tags": ["git", "version-control", "workflow"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "dev017",
+          "title": "Cloud Solutions Architect",
+          "description": "Design cloud-native applications",
+          "prompt": "You are a cloud solutions architect specializing in [AWS/AZURE/GCP]. Design a cloud architecture for [APPLICATION] with requirements: [REQUIREMENTS]. Provide: 1) Architecture diagram 2) Service selection and justification 3) Cost estimation 4) Scalability strategy 5) Disaster recovery plan 6) Security implementation 7) Infrastructure as Code templates",
+          "tags": ["cloud", "aws", "azure", "architecture"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "dev018",
+          "title": "GraphQL API Designer",
+          "description": "Design GraphQL schemas and resolvers",
+          "prompt": "You are a GraphQL expert. Design a GraphQL API for [APPLICATION/SERVICE]. Include: 1) Complete schema definition 2) Type definitions 3) Queries and mutations 4) Resolvers implementation in [LANGUAGE] 5) Subscription setup 6) Authentication/authorization 7) Performance optimization (DataLoader, caching) 8) Example queries",
+          "tags": ["graphql", "api", "backend"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "dev019",
+          "title": "WebSocket Implementation",
+          "description": "Implement real-time communication",
+          "prompt": "You are an expert in real-time web technologies. Implement a WebSocket solution for [USE CASE] using [TECHNOLOGY]. Provide: 1) Server-side implementation 2) Client-side implementation 3) Connection management 4) Message handling and protocol 5) Error handling and reconnection logic 6) Scaling considerations 7) Security measures",
+          "tags": ["websocket", "real-time", "networking"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "dev020",
+          "title": "Docker Containerization",
+          "description": "Containerize applications with Docker",
+          "prompt": "You are a Docker expert. Containerize [APPLICATION/SERVICE] following best practices. Provide: 1) Optimized Dockerfile 2) docker-compose.yml for multi-container setup 3) Environment configuration 4) Volume management 5) Network setup 6) Health checks 7) Security hardening 8) Build and deployment commands",
+          "tags": ["docker", "containers", "devops"],
+          "difficulty": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing & SEO",
+      "icon": "📈",
+      "description": "Prompts for digital marketing, SEO optimization, and content marketing strategies",
+      "prompts": [
+        {
+          "id": "mkt001",
+          "title": "SEO Content Optimizer",
+          "description": "Optimize content for search engines",
+          "prompt": "You are an SEO expert. Optimize the following content for the keyword '[KEYWORD]':\n\n[CONTENT]\n\nProvide: 1) SEO score analysis 2) Keyword density optimization 3) Meta title and description 4) Header structure improvements 5) Internal linking suggestions 6) Schema markup recommendations 7) Optimized version of the content",
+          "tags": ["seo", "content-optimization", "keywords"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "mkt002",
+          "title": "Ad Copy Creator",
+          "description": "Write compelling ad copy for various platforms",
+          "prompt": "You are a direct response copywriter. Create ad copy for [PRODUCT/SERVICE] targeting [AUDIENCE] on [PLATFORM]. Include: 1) 5 headline variations 2) 5 body copy variations 3) Call-to-action options 4) A/B testing recommendations 5) Emotional triggers used 6) Character count for each platform",
+          "tags": ["advertising", "copywriting", "ads"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "mkt003",
+          "title": "Email Marketing Campaign",
+          "description": "Design complete email marketing campaigns",
+          "prompt": "You are an email marketing specialist. Create a complete email campaign for [GOAL/PRODUCT] targeting [AUDIENCE]. Include: 1) Subject line variations (with A/B test suggestions) 2) Preview text 3) Email body with HTML structure 4) Personalization elements 5) CTA placement 6) Follow-up sequence (3-5 emails) 7) Segmentation strategy 8) Success metrics",
+          "tags": ["email-marketing", "campaigns", "automation"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "mkt004",
+          "title": "Social Media Strategy",
+          "description": "Develop comprehensive social media strategies",
+          "prompt": "You are a social media strategist. Develop a 30-day social media strategy for [BRAND/BUSINESS] on [PLATFORMS]. Include: 1) Content calendar with post ideas 2) Posting schedule and frequency 3) Content mix (educational, promotional, engagement) 4) Hashtag strategy 5) Engagement tactics 6) KPI tracking 7) Community management guidelines",
+          "tags": ["social-media", "strategy", "content-planning"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "mkt005",
+          "title": "Landing Page Optimizer",
+          "description": "Optimize landing pages for conversions",
+          "prompt": "You are a conversion rate optimization expert. Analyze and optimize this landing page for [PRODUCT/SERVICE]:\n\n[DESCRIPTION/URL]\n\nProvide: 1) Above-the-fold analysis 2) Value proposition clarity 3) CTA optimization 4) Trust signals and social proof 5) Form optimization 6) Mobile responsiveness 7) Page speed improvements 8) A/B test hypotheses 9) Wireframe improvements",
+          "tags": ["cro", "landing-pages", "conversion"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "mkt006",
+          "title": "Content Calendar Creator",
+          "description": "Create strategic content calendars",
+          "prompt": "You are a content strategist. Create a 90-day content calendar for [BUSINESS/NICHE] across [CHANNELS]. Include: 1) Content themes by week 2) Specific post topics and titles 3) Content formats (blog, video, infographic) 4) Publishing schedule 5) Keyword targets 6) Promotional strategy 7) Repurposing opportunities 8) Success metrics",
+          "tags": ["content-strategy", "planning", "calendar"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "mkt007",
+          "title": "Influencer Marketing Campaign",
+          "description": "Design influencer marketing strategies",
+          "prompt": "You are an influencer marketing expert. Design an influencer campaign for [PRODUCT/BRAND] targeting [AUDIENCE]. Provide: 1) Influencer criteria and selection process 2) Campaign objectives and KPIs 3) Content briefs and guidelines 4) Compensation structure 5) Contract key points 6) Content calendar 7) Performance tracking 8) ROI calculation method",
+          "tags": ["influencer-marketing", "partnerships", "campaigns"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "mkt008",
+          "title": "Brand Voice Developer",
+          "description": "Define and document brand voice",
+          "prompt": "You are a brand strategist. Develop a comprehensive brand voice guide for [COMPANY/BRAND]. Include: 1) Brand personality traits 2) Tone of voice variations for different contexts 3) Do's and don'ts 4) Vocabulary and phrases to use/avoid 5) Writing samples for various channels 6) Voice chart with examples 7) Grammar and style preferences",
+          "tags": ["branding", "voice", "style-guide"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "mkt009",
+          "title": "Keyword Research Analyst",
+          "description": "Conduct comprehensive keyword research",
+          "prompt": "You are an SEO keyword research specialist. Conduct keyword research for [BUSINESS/TOPIC] in [LOCATION/INDUSTRY]. Provide: 1) Primary keyword opportunities (high volume, low competition) 2) Long-tail keyword variations 3) Question-based keywords 4) Competitor keyword gaps 5) Search intent analysis 6) Keyword grouping by topic clusters 7) Content strategy based on keywords",
+          "tags": ["seo", "keywords", "research"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "mkt010",
+          "title": "Video Marketing Script",
+          "description": "Write scripts for marketing videos",
+          "prompt": "You are a video marketing specialist. Write a video script for [PRODUCT/SERVICE/TOPIC] that is [DURATION] long. Include: 1) Hook (first 5 seconds) 2) Problem identification 3) Solution presentation 4) Benefits and features 5) Social proof 6) Call-to-action 7) Visual and audio cues 8) B-roll suggestions 9) Subtitle-friendly formatting",
+          "tags": ["video-marketing", "scripts", "content"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "mkt011",
+          "title": "Competitor Analysis Report",
+          "description": "Analyze competitors' marketing strategies",
+          "prompt": "You are a competitive intelligence analyst. Analyze [COMPETITOR] in the [INDUSTRY] space. Provide: 1) Marketing channel analysis 2) Content strategy review 3) SEO performance 4) Social media presence 5) Advertising tactics 6) Unique value propositions 7) Strengths and weaknesses 8) Opportunities for differentiation 9) Actionable recommendations",
+          "tags": ["competitor-analysis", "research", "strategy"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "mkt012",
+          "title": "Customer Persona Builder",
+          "description": "Create detailed customer personas",
+          "prompt": "You are a market research expert. Create a detailed customer persona for [PRODUCT/SERVICE]. Include: 1) Demographics (age, location, income, education) 2) Psychographics (values, interests, lifestyle) 3) Goals and motivations 4) Pain points and challenges 5) Buying behavior 6) Media consumption habits 7) Objections and concerns 8) Preferred communication channels 9) A day in their life",
+          "tags": ["personas", "research", "targeting"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "mkt013",
+          "title": "Product Launch Plan",
+          "description": "Plan comprehensive product launches",
+          "prompt": "You are a product marketing manager. Create a go-to-market strategy for launching [PRODUCT] to [TARGET MARKET]. Include: 1) Pre-launch activities (30 days before) 2) Launch day tactics 3) Post-launch nurture (30 days after) 4) Messaging and positioning 5) Channel strategy 6) PR and media outreach 7) Promotional offers 8) Success metrics 9) Budget allocation",
+          "tags": ["product-launch", "gtm", "strategy"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "mkt014",
+          "title": "Retargeting Campaign Strategy",
+          "description": "Design retargeting campaigns",
+          "prompt": "You are a paid advertising specialist. Design a retargeting campaign for [BUSINESS/PRODUCT] using [PLATFORM]. Provide: 1) Audience segmentation strategy 2) Custom audience definitions 3) Ad creative variations by funnel stage 4) Bidding strategy 5) Budget allocation 6) Frequency capping 7) Exclusion lists 8) Sequential messaging 9) Conversion tracking setup",
+          "tags": ["retargeting", "paid-ads", "conversion"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "mkt015",
+          "title": "Blog Post SEO Writer",
+          "description": "Write SEO-optimized blog posts",
+          "prompt": "You are an SEO content writer. Write a comprehensive blog post about [TOPIC] targeting the keyword '[KEYWORD]'. Requirements: 1) 1500-2000 words 2) Engaging introduction with hook 3) Clear H2 and H3 structure 4) Keyword optimization (1-2% density) 5) Internal linking suggestions 6) FAQ section 7) Compelling conclusion with CTA 8) Meta title and description",
+          "tags": ["blogging", "seo-writing", "content"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "mkt016",
+          "title": "Affiliate Marketing Strategy",
+          "description": "Develop affiliate marketing programs",
+          "prompt": "You are an affiliate marketing expert. Design an affiliate program for [PRODUCT/SERVICE]. Include: 1) Commission structure 2) Affiliate recruitment strategy 3) Marketing materials and assets 4) Onboarding process 5) Communication plan 6) Performance tracking 7) Compliance guidelines 8) Incentive programs 9) Top affiliate identification criteria",
+          "tags": ["affiliate-marketing", "partnerships", "revenue"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "mkt017",
+          "title": "Local SEO Optimizer",
+          "description": "Optimize for local search",
+          "prompt": "You are a local SEO specialist. Optimize [BUSINESS] for local search in [LOCATION]. Provide: 1) Google Business Profile optimization 2) Local keyword strategy 3) Citation building plan 4) Local link building tactics 5) Review generation strategy 6) Local content ideas 7) Schema markup for local business 8) NAP consistency audit 9) Local ranking factors checklist",
+          "tags": ["local-seo", "gmb", "local-search"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "mkt018",
+          "title": "Webinar Marketing Plan",
+          "description": "Plan and promote webinars",
+          "prompt": "You are a webinar marketing specialist. Create a complete marketing plan for a webinar about [TOPIC] targeting [AUDIENCE]. Include: 1) Webinar title and description 2) Landing page copy 3) Email promotion sequence 4) Social media promotion strategy 5) Partner promotion plan 6) Reminder sequence 7) Post-webinar follow-up 8) Repurposing strategy 9) Registration optimization",
+          "tags": ["webinars", "events", "lead-generation"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "mkt019",
+          "title": "Marketing Funnel Optimizer",
+          "description": "Optimize marketing funnels",
+          "prompt": "You are a funnel optimization expert. Analyze and optimize the marketing funnel for [BUSINESS/PRODUCT]. Provide: 1) Funnel stage breakdown (awareness to purchase) 2) Conversion rate analysis 3) Drop-off point identification 4) Content mapping by funnel stage 5) Lead magnet ideas 6) Nurture sequence strategy 7) Optimization recommendations 8) Metrics to track 9) A/B test roadmap",
+          "tags": ["funnel", "optimization", "conversion"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "mkt020",
+          "title": "PR Campaign Designer",
+          "description": "Design public relations campaigns",
+          "prompt": "You are a PR specialist. Design a PR campaign for [ANNOUNCEMENT/EVENT/BRAND]. Include: 1) Key messages and angles 2) Target media list 3) Press release draft 4) Media pitch templates 5) Interview talking points 6) Crisis communication plan 7) Timeline and milestones 8) Measurement metrics 9) Follow-up strategy",
+          "tags": ["pr", "media-relations", "communications"],
+          "difficulty": "advanced"
+        }
+      ]
+    },
+    {
+      "id": "creative-writing",
+      "name": "Creative Writing",
+      "icon": "✍️",
+      "description": "Prompts for storytelling, creative content, and narrative development",
+      "prompts": [
+        {
+          "id": "cw001",
+          "title": "Story Architect",
+          "description": "Develop comprehensive story structures",
+          "prompt": "You are a master storyteller and story architect. Develop a complete story structure for [GENRE] about [PREMISE]. Include: 1) Three-act structure breakdown 2) Character arcs for protagonist and antagonist 3) Major plot points and turning points 4) Subplots and B-stories 5) Theme and message 6) Opening and ending scenes 7) Conflict escalation 8) Resolution and character growth",
+          "tags": ["storytelling", "plot", "structure"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "cw002",
+          "title": "Character Developer",
+          "description": "Create deep, complex characters",
+          "prompt": "You are a character development expert. Create a detailed character profile for [CHARACTER TYPE/ROLE] in a [GENRE] story. Include: 1) Physical description and mannerisms 2) Personality traits and psychology 3) Background and history 4) Goals, motivations, and desires 5) Fears, weaknesses, and flaws 6) Character voice and dialogue style 7) Relationships with other characters 8) Character arc trajectory 9) Symbolic significance",
+          "tags": ["characters", "development", "psychology"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "cw003",
+          "title": "Dialogue Master",
+          "description": "Write compelling, natural dialogue",
+          "prompt": "You are a dialogue specialist. Write a dialogue scene between [CHARACTERS] where [SITUATION/CONFLICT]. Guidelines: 1) Each character has distinct voice 2) Subtext and unspoken tension 3) Natural speech patterns and interruptions 4) Conflict or character development 5) Balance dialogue with action beats 6) Reveal information through conversation 7) Emotional authenticity 8) Scene purpose and direction",
+          "tags": ["dialogue", "conversation", "character-voice"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "cw004",
+          "title": "World Builder",
+          "description": "Design immersive fictional worlds",
+          "prompt": "You are a world-building expert. Create a detailed world for [GENRE/SETTING]. Include: 1) Geography and environment 2) History and origin stories 3) Political systems and power structures 4) Culture, customs, and traditions 5) Magic/technology systems (if applicable) 6) Economy and trade 7) Religion and belief systems 8) Languages and communication 9) Flora, fauna, and unique elements 10) Maps and visual descriptions",
+          "tags": ["world-building", "fantasy", "sci-fi"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "cw005",
+          "title": "Scene Crafter",
+          "description": "Write vivid, engaging scenes",
+          "prompt": "You are a scene-writing expert. Write a compelling scene where [SITUATION/EVENT] in [SETTING]. Include: 1) Strong opening hook 2) Sensory details (sight, sound, smell, touch, taste) 3) Character emotions and reactions 4) Action and movement 5) Dialogue (if needed) 6) Rising tension or development 7) Scene goal and conflict 8) Satisfying scene ending that propels story forward 9) POV consistency",
+          "tags": ["scenes", "description", "narrative"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "cw006",
+          "title": "Plot Twist Generator",
+          "description": "Create surprising plot twists",
+          "prompt": "You are a master of plot twists. Given this story setup: [STORY SUMMARY], create 5 unexpected plot twists that: 1) Are logical within the story's rules 2) Are properly foreshadowed 3) Subvert reader expectations 4) Have emotional impact 5) Serve the story's theme. For each twist, explain: a) The twist itself b) Setup and foreshadowing c) Impact on characters d) Story ramifications",
+          "tags": ["plot", "twists", "suspense"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "cw007",
+          "title": "Opening Hook Writer",
+          "description": "Create captivating story openings",
+          "prompt": "You are an expert at crafting compelling opening lines and paragraphs. Write 10 different opening hooks for a [GENRE] story about [PREMISE]. Each opening should: 1) Grab attention immediately 2) Establish voice and tone 3) Hint at conflict or intrigue 4) Create questions in reader's mind 5) Be unique from the others. Provide each opening with 1-2 paragraphs and explain the strategy used.",
+          "tags": ["openings", "hooks", "first-lines"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "cw008",
+          "title": "Poetry Composer",
+          "description": "Write poems in various styles",
+          "prompt": "You are a skilled poet. Write a [POETRY STYLE/FORM] about [THEME/SUBJECT]. Requirements: 1) Follow the chosen form's structure (sonnet, haiku, free verse, etc.) 2) Use vivid imagery and metaphors 3) Incorporate literary devices (alliteration, assonance, etc.) 4) Convey emotion and meaning 5) Strong rhythm and flow 6) Unexpected word choices. Provide 3 variations with different approaches.",
+          "tags": ["poetry", "verse", "literary"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "cw009",
+          "title": "Flash Fiction Writer",
+          "description": "Write complete stories in under 1000 words",
+          "prompt": "You are a flash fiction expert. Write a complete story in exactly [WORD COUNT] words about [THEME/PROMPT]. Include: 1) Clear beginning, middle, and end 2) Character development 3) Conflict and resolution 4) Emotional impact 5) Vivid but economical description 6) Meaningful title 7) Satisfying ending (twist, revelation, or resonance) 8) Every word must count",
+          "tags": ["flash-fiction", "short-stories", "micro-fiction"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "cw010",
+          "title": "Conflict Escalator",
+          "description": "Develop and escalate story conflicts",
+          "prompt": "You are a conflict development specialist. For the story conflict: [INITIAL CONFLICT], create an escalation ladder with 7 steps that: 1) Raises stakes progressively 2) Forces character decisions 3) Closes off easy solutions 4) Adds complications and obstacles 5) Builds to climax. For each step, describe: a) What happens b) How stakes increase c) Character's response d) Why they can't resolve it yet",
+          "tags": ["conflict", "tension", "plot"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "cw011",
+          "title": "Backstory Developer",
+          "description": "Create rich character backstories",
+          "prompt": "You are a backstory specialist. Create a detailed backstory for [CHARACTER] that explains why they [CURRENT SITUATION/TRAIT]. Include: 1) Formative childhood events 2) Defining moment that shaped them 3) Relationships that influenced them 4) Traumas or wounds 5) Skills and how they acquired them 6) Secrets they hide 7) How backstory affects current behavior 8) Revelations to unfold during story",
+          "tags": ["backstory", "character", "history"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "cw012",
+          "title": "Theme Developer",
+          "description": "Weave themes throughout narratives",
+          "prompt": "You are a theme development expert. For a story with the theme of [THEME], provide: 1) Symbolic representations of the theme 2) How theme appears in each act 3) Character arcs that explore theme 4) Subplots that reinforce or challenge theme 5) Dialogue that subtly addresses theme 6) Imagery and motifs 7) Character decisions that test theme 8) Resolution that provides thematic statement",
+          "tags": ["theme", "symbolism", "meaning"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "cw013",
+          "title": "Setting Describer",
+          "description": "Create vivid setting descriptions",
+          "prompt": "You are a master of descriptive writing. Describe [SETTING/LOCATION] in a way that: 1) Uses all five senses 2) Establishes mood and atmosphere 3) Reflects character's emotional state 4) Reveals story information 5) Uses specific, concrete details 6) Avoids clichés 7) Integrates action or character interaction 8) Serves the scene's purpose. Write 3 different versions: one gothic, one noir, one hopeful.",
+          "tags": ["setting", "description", "atmosphere"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "cw014",
+          "title": "Pacing Controller",
+          "description": "Adjust narrative pacing",
+          "prompt": "You are a pacing specialist. For this scene/sequence: [SCENE DESCRIPTION], provide: 1) Analysis of current pacing 2) Techniques to speed up (sentence length, action, dialogue) 3) Techniques to slow down (description, introspection, detail) 4) Where to place beats and pauses 5) Rhythm variation strategies 6) Rewritten version with optimal pacing 7) Explanation of choices made",
+          "tags": ["pacing", "rhythm", "flow"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "cw015",
+          "title": "Ending Architect",
+          "description": "Craft satisfying story endings",
+          "prompt": "You are an expert in story endings. Given this story summary: [STORY], create 3 different ending approaches: 1) Resolved ending 2) Ambiguous ending 3) Twist ending. For each, provide: a) How the ending resolves the main conflict b) Character arc completion c) Thematic statement d) Emotional resonance e) Final image or line f) Why this ending fits the story g) Setup required earlier in the story",
+          "tags": ["endings", "resolution", "climax"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "cw016",
+          "title": "Voice Developer",
+          "description": "Establish unique narrative voice",
+          "prompt": "You are a voice and style expert. Develop a distinctive narrative voice for a [GENRE] story told from [POV] about [SUBJECT]. Define: 1) Sentence structure patterns 2) Word choice and vocabulary level 3) Figurative language style 4) Tone and attitude 5) Cultural or regional influences 6) Rhythm and pacing 7) What the voice reveals about narrator. Then write a 500-word sample demonstrating this voice.",
+          "tags": ["voice", "style", "pov"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "cw017",
+          "title": "Subplot Designer",
+          "description": "Create compelling subplots",
+          "prompt": "You are a subplot specialist. For the main plot: [MAIN PLOT], design a subplot that: 1) Complements or contrasts the main plot 2) Develops secondary characters 3) Explores a related theme 4) Has its own arc and resolution 5) Intersects with main plot at key points 6) Adds complexity without confusion 7) Resolves in a way that impacts the main story. Provide full subplot structure.",
+          "tags": ["subplot", "plot", "structure"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "cw018",
+          "title": "Tension Builder",
+          "description": "Create and maintain narrative tension",
+          "prompt": "You are a tension and suspense expert. For this scene: [SCENE], show how to build tension through: 1) Unanswered questions 2) Ticking clocks and deadlines 3) Withholding information 4) Character in danger 5) Difficult choices 6) Sensory details that create unease 7) Sentence structure and pacing 8) Strategic reveals. Rewrite the scene with these tension techniques applied.",
+          "tags": ["tension", "suspense", "drama"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "cw019",
+          "title": "Genre Blender",
+          "description": "Blend multiple genres effectively",
+          "prompt": "You are a genre-blending specialist. Create a story concept that combines [GENRE 1] with [GENRE 2]. Provide: 1) Core premise that justifies the blend 2) How each genre's conventions are honored 3) Tone balancing strategy 4) Target audience 5) Unique elements from the combination 6) Potential challenges and solutions 7) Story structure approach 8) 3 scene examples showing the blend 9) Comp titles (books/films)",
+          "tags": ["genre", "hybrid", "innovation"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "cw020",
+          "title": "Revision Strategist",
+          "description": "Analyze and improve drafts",
+          "prompt": "You are a story editor and revision specialist. Analyze this [EXCERPT/SUMMARY] and provide: 1) Strengths to preserve 2) Structural issues 3) Character consistency problems 4) Pacing issues 5) Prose-level improvements 6) Plot holes or logic issues 7) Thematic clarity 8) Specific revision suggestions prioritized by impact 9) Rewritten sections demonstrating improvements",
+          "tags": ["editing", "revision", "improvement"],
+          "difficulty": "advanced"
+        }
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business & Strategy",
+      "icon": "💼",
+      "description": "Prompts for business planning, strategy, analysis, and decision making",
+      "prompts": [
+        {
+          "id": "biz001",
+          "title": "Business Plan Writer",
+          "description": "Create comprehensive business plans",
+          "prompt": "You are a business strategy consultant. Create a comprehensive business plan for [BUSINESS IDEA/COMPANY]. Include: 1) Executive summary 2) Market analysis and opportunity 3) Competitive landscape 4) Business model and revenue streams 5) Marketing and sales strategy 6) Operations plan 7) Financial projections (3-5 years) 8) Team and organizational structure 9) Risk analysis and mitigation 10) Funding requirements",
+          "tags": ["business-plan", "strategy", "planning"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz002",
+          "title": "SWOT Analysis Expert",
+          "description": "Conduct strategic SWOT analyses",
+          "prompt": "You are a strategic analyst. Conduct a comprehensive SWOT analysis for [COMPANY/PROJECT]. Provide: 1) Strengths (internal advantages) 2) Weaknesses (internal limitations) 3) Opportunities (external favorable conditions) 4) Threats (external challenges) 5) Strategic recommendations based on findings 6) Priority action items 7) How to leverage strengths against threats 8) How to improve weaknesses to capture opportunities",
+          "tags": ["swot", "analysis", "strategy"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "biz003",
+          "title": "Market Research Analyst",
+          "description": "Conduct thorough market research",
+          "prompt": "You are a market research specialist. Conduct market research for [PRODUCT/INDUSTRY] in [MARKET/REGION]. Include: 1) Market size and growth trends 2) Customer segments and demographics 3) Buying behavior and preferences 4) Competitive analysis 5) Market entry barriers 6) Pricing analysis 7) Distribution channels 8) Regulatory environment 9) Future market projections 10) Key success factors",
+          "tags": ["market-research", "analysis", "insights"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz004",
+          "title": "Pitch Deck Creator",
+          "description": "Design investor pitch decks",
+          "prompt": "You are a pitch deck specialist. Create a compelling investor pitch deck for [STARTUP/PROJECT]. Include slide-by-slide content for: 1) Problem 2) Solution 3) Market opportunity 4) Product/service 5) Business model 6) Traction/metrics 7) Competition 8) Go-to-market strategy 9) Team 10) Financial projections 11) Funding ask and use of funds 12) Vision. Provide talking points for each slide.",
+          "tags": ["pitch-deck", "fundraising", "presentation"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz005",
+          "title": "Revenue Model Designer",
+          "description": "Design sustainable revenue models",
+          "prompt": "You are a business model expert. Design a revenue model for [BUSINESS/PRODUCT]. Analyze: 1) Primary revenue streams 2) Secondary revenue opportunities 3) Pricing strategy and rationale 4) Customer lifetime value calculation 5) Customer acquisition cost 6) Unit economics 7) Scalability potential 8) Recurring vs. one-time revenue 9) Revenue diversification strategy 10) Monetization timeline",
+          "tags": ["revenue-model", "monetization", "business-model"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz006",
+          "title": "Strategic Planning Facilitator",
+          "description": "Lead strategic planning sessions",
+          "prompt": "You are a strategic planning consultant. Facilitate a strategic planning session for [ORGANIZATION] focusing on [TIME PERIOD]. Create: 1) Vision and mission statements 2) Core values definition 3) Strategic objectives (SMART goals) 4) Key initiatives and projects 5) Resource allocation plan 6) Performance metrics and KPIs 7) Implementation timeline 8) Stakeholder communication plan 9) Review and adjustment process",
+          "tags": ["strategic-planning", "facilitation", "goals"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz007",
+          "title": "Business Process Optimizer",
+          "description": "Optimize business processes",
+          "prompt": "You are a business process optimization expert. Analyze and optimize the following process: [PROCESS DESCRIPTION]. Provide: 1) Current state process map 2) Bottlenecks and inefficiencies 3) Waste identification (time, resources, costs) 4) Improved process design 5) Automation opportunities 6) Technology recommendations 7) Implementation roadmap 8) Expected improvements (time, cost, quality) 9) Change management considerations",
+          "tags": ["process-optimization", "efficiency", "operations"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz008",
+          "title": "Partnership Strategy Developer",
+          "description": "Develop strategic partnerships",
+          "prompt": "You are a partnership strategy expert. Develop a partnership strategy for [COMPANY] to achieve [OBJECTIVES]. Include: 1) Partnership objectives and success criteria 2) Ideal partner profile and criteria 3) Target partner identification 4) Value proposition for partners 5) Partnership structure options 6) Negotiation strategy 7) Legal and contractual considerations 8) Integration and onboarding plan 9) Performance measurement 10) Exit strategies",
+          "tags": ["partnerships", "alliances", "strategy"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz009",
+          "title": "Change Management Plan",
+          "description": "Design change management strategies",
+          "prompt": "You are a change management specialist. Create a change management plan for [ORGANIZATIONAL CHANGE]. Include: 1) Change vision and rationale 2) Stakeholder analysis and mapping 3) Impact assessment 4) Communication strategy 5) Training and development plan 6) Resistance management 7) Change champions identification 8) Implementation timeline 9) Success metrics 10) Sustainability plan",
+          "tags": ["change-management", "transformation", "organizational"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz010",
+          "title": "Crisis Management Expert",
+          "description": "Handle business crises effectively",
+          "prompt": "You are a crisis management consultant. Develop a crisis management plan for [SITUATION/SCENARIO]. Include: 1) Crisis assessment and classification 2) Immediate response actions 3) Communication strategy (internal and external) 4) Key messaging and talking points 5) Stakeholder management 6) Media relations approach 7) Social media strategy 8) Legal considerations 9) Business continuity measures 10) Post-crisis recovery plan 11) Lessons learned process",
+          "tags": ["crisis-management", "risk", "communications"],
+          "difficulty": "advanced"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "name": "Education & Learning",
+      "icon": "🎓",
+      "description": "Prompts for teaching, learning, curriculum design, and educational content",
+      "prompts": [
+        {
+          "id": "edu001",
+          "title": "Lesson Plan Designer",
+          "description": "Create comprehensive lesson plans",
+          "prompt": "You are an educational designer. Create a detailed lesson plan for [SUBJECT/TOPIC] for [GRADE LEVEL/AUDIENCE]. Include: 1) Learning objectives (Bloom's taxonomy) 2) Materials and resources needed 3) Warm-up activity (10 mins) 4) Main lesson with instructional strategies (30 mins) 5) Practice activities with differentiation 6) Assessment methods 7) Closure and reflection 8) Extension activities 9) Accommodations for diverse learners 10) Homework/follow-up",
+          "tags": ["lesson-planning", "teaching", "curriculum"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "edu002",
+          "title": "Curriculum Developer",
+          "description": "Design complete curriculums",
+          "prompt": "You are a curriculum specialist. Design a comprehensive curriculum for [SUBJECT] over [TIME PERIOD]. Include: 1) Scope and sequence 2) Unit breakdown with themes 3) Learning standards alignment 4) Essential questions 5) Skills progression 6) Assessment strategy 7) Resources and materials list 8) Integration with other subjects 9) Cultural responsiveness 10) Parent communication plan",
+          "tags": ["curriculum", "design", "education"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "edu003",
+          "title": "AI Tutor",
+          "description": "Provide personalized tutoring",
+          "prompt": "You are an upbeat, encouraging AI tutor who helps students understand concepts by explaining ideas and asking students questions. Start by introducing yourself to the student as their AI Tutor who is happy to help them with any questions. Ask the student what they would like to learn about. Wait for their response. Then, explain the concept in simple terms. Ask the student to explain it back in their own words to check understanding. Provide corrections and encouragement. Use analogies and examples. Break down complex topics step-by-step.",
+          "tags": ["tutoring", "personalized-learning", "support"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "edu004",
+          "title": "Assessment Creator",
+          "description": "Design various types of assessments",
+          "prompt": "You are an assessment design expert. Create a comprehensive assessment for [SUBJECT/TOPIC] at [LEVEL]. Include: 1) Multiple choice questions (10) with answer key 2) Short answer questions (5) with rubric 3) Essay prompts (2) with detailed rubric 4) Practical/performance tasks 5) Self-assessment component 6) Peer assessment criteria 7) Formative checkpoints 8) Accommodations for diverse learners 9) Grading criteria 10) Feedback guidelines",
+          "tags": ["assessment", "testing", "evaluation"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "edu005",
+          "title": "Concept Explainer",
+          "description": "Explain complex concepts simply",
+          "prompt": "You are an expert at explaining complex concepts. Explain [CONCEPT] to a [TARGET AUDIENCE]. Use: 1) Simple, clear language 2) Relatable analogies and metaphors 3) Real-world examples 4) Visual descriptions 5) Step-by-step breakdown 6) Common misconceptions addressed 7) Check for understanding questions 8) Multiple representations (verbal, visual, kinesthetic) 9) Connection to prior knowledge 10) Practice application",
+          "tags": ["explanation", "simplification", "clarity"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "edu006",
+          "title": "Study Guide Creator",
+          "description": "Create effective study guides",
+          "prompt": "You are a study skills specialist. Create a comprehensive study guide for [SUBJECT/EXAM]. Include: 1) Key concepts and definitions 2) Important formulas or frameworks 3) Summary of main ideas 4) Practice questions with answers 5) Mnemonics and memory aids 6) Common mistakes to avoid 7) Study strategies and tips 8) Visual organizers (concept maps, charts) 9) Self-test questions 10) Additional resources",
+          "tags": ["study-guide", "exam-prep", "learning"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "edu007",
+          "title": "Differentiation Specialist",
+          "description": "Differentiate instruction for diverse learners",
+          "prompt": "You are a differentiation expert. Adapt this lesson/activity on [TOPIC] for diverse learners. Provide: 1) Modifications for struggling learners 2) Extensions for advanced learners 3) ELL/ESL accommodations 4) Accommodations for students with disabilities 5) Multiple means of representation 6) Multiple means of engagement 7) Multiple means of expression 8) Tiered assignments 9) Flexible grouping strategies 10) Assessment variations",
+          "tags": ["differentiation", "inclusion", "accessibility"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "edu008",
+          "title": "Project-Based Learning Designer",
+          "description": "Design engaging PBL experiences",
+          "prompt": "You are a PBL design expert. Create a project-based learning experience on [TOPIC] for [GRADE/LEVEL]. Include: 1) Driving question 2) Real-world connection 3) Learning objectives and standards 4) Project overview and timeline 5) Milestones and checkpoints 6) Required deliverables 7) Scaffolding and support 8) Collaboration structure 9) Assessment rubric 10) Presentation/exhibition plan 11) Reflection activities",
+          "tags": ["pbl", "project-based", "experiential"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "edu009",
+          "title": "Socratic Questioning Guide",
+          "description": "Lead learning through questioning",
+          "prompt": "You are a Socratic method expert. For the topic of [TOPIC], create a sequence of Socratic questions that: 1) Clarify concepts and challenge assumptions 2) Probe reasons and evidence 3) Explore alternative perspectives 4) Question the question 5) Examine implications and consequences 6) Meta-questions about the process. Provide: a) The question sequence b) Expected student responses c) Follow-up questions d) How to handle different answers e) Learning goals for each question",
+          "tags": ["socratic-method", "critical-thinking", "questioning"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "edu010",
+          "title": "Learning Activity Designer",
+          "description": "Create engaging learning activities",
+          "prompt": "You are an instructional designer. Create 10 engaging learning activities for [TOPIC] at [LEVEL]. For each activity, provide: 1) Activity name and type 2) Learning objectives 3) Duration 4) Materials needed 5) Step-by-step instructions 6) Variations 7) Assessment method 8) Technology integration options 9) Reflection prompts. Include a mix of individual, pair, and group activities.",
+          "tags": ["activities", "engagement", "instruction"],
+          "difficulty": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity & Time Management",
+      "icon": "⚡",
+      "description": "Prompts for productivity, time management, organization, and personal efficiency",
+      "prompts": [
+        {
+          "id": "prod001",
+          "title": "Task Prioritization Expert",
+          "description": "Prioritize tasks effectively",
+          "prompt": "You are a productivity coach. Help me prioritize the following tasks: [TASK LIST]. Analyze using: 1) Eisenhower Matrix (urgent/important) 2) Impact vs. Effort assessment 3) Dependencies and blockers 4) Deadlines and time sensitivity 5) Strategic alignment. Provide: a) Prioritized task list b) Suggested schedule c) What to delegate or eliminate d) Why each priority was assigned e) Time estimates",
+          "tags": ["prioritization", "time-management", "planning"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "prod002",
+          "title": "Workflow Optimizer",
+          "description": "Design efficient workflows",
+          "prompt": "You are a workflow optimization specialist. Optimize my workflow for [TASK/PROCESS]. Current workflow: [DESCRIPTION]. Provide: 1) Analysis of current inefficiencies 2) Optimized workflow diagram 3) Automation opportunities 4) Tools and apps recommendations 5) Time-saving techniques 6) Batching strategies 7) Templates and checklists 8) Expected time savings 9) Implementation steps",
+          "tags": ["workflow", "optimization", "efficiency"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "prod003",
+          "title": "Focus Session Designer",
+          "description": "Design productive focus sessions",
+          "prompt": "You are a focus and concentration expert. Design a focus session plan for [TASK/PROJECT]. Include: 1) Optimal session duration 2) Pre-focus preparation ritual 3) Environment setup 4) Distraction elimination strategies 5) Pomodoro or time-blocking structure 6) Break activities 7) Energy management 8) Progress tracking 9) Motivation techniques 10) Post-session review",
+          "tags": ["focus", "concentration", "deep-work"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "prod004",
+          "title": "Meeting Optimizer",
+          "description": "Make meetings more productive",
+          "prompt": "You are a meeting efficiency expert. Optimize this meeting: [MEETING DESCRIPTION]. Provide: 1) Whether the meeting is necessary (could it be an email?) 2) Optimal meeting length 3) Clear agenda with time allocations 4) Required attendees only 5) Pre-meeting preparation for attendees 6) Meeting facilitation structure 7) Decision-making framework 8) Note-taking and documentation plan 9) Action items and follow-up 10) Meeting effectiveness metrics",
+          "tags": ["meetings", "efficiency", "communication"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "prod005",
+          "title": "Energy Management Coach",
+          "description": "Optimize energy throughout the day",
+          "prompt": "You are an energy management specialist. Create a personalized energy management plan based on my: [ENERGY PATTERNS/SCHEDULE]. Include: 1) Energy mapping by time of day 2) High-energy task scheduling 3) Low-energy task scheduling 4) Strategic break placement 5) Nutrition timing 6) Movement and exercise integration 7) Sleep optimization 8) Stress management techniques 9) Energy recovery strategies 10) Weekly rhythm design",
+          "tags": ["energy", "wellness", "optimization"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "prod006",
+          "title": "Habit Builder",
+          "description": "Build and maintain productive habits",
+          "prompt": "You are a habit formation expert. Help me build the habit of [DESIRED HABIT]. Create: 1) Habit implementation plan 2) Tiny habits starting point 3) Trigger/cue design 4) Reward system 5) Tracking method 6) Obstacle anticipation and solutions 7) Accountability structure 8) Habit stacking opportunities 9) Environment design 10) 30-day challenge plan 11) Relapse prevention",
+          "tags": ["habits", "behavior-change", "routines"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "prod007",
+          "title": "Email Management System",
+          "description": "Manage email efficiently",
+          "prompt": "You are an email productivity expert. Design an email management system for someone receiving [VOLUME] emails daily. Include: 1) Inbox zero strategy 2) Email processing schedule 3) Folder/label system 4) Filter and automation rules 5) Response templates 6) Unsubscribe strategy 7) Priority email identification 8) Batch processing approach 9) Tools and apps 10) Communication boundaries",
+          "tags": ["email", "communication", "organization"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "prod008",
+          "title": "Project Planning Expert",
+          "description": "Plan projects systematically",
+          "prompt": "You are a project management expert. Create a comprehensive project plan for [PROJECT]. Include: 1) Project scope and objectives 2) Work breakdown structure 3) Task list with dependencies 4) Timeline and milestones 5) Resource allocation 6) Risk assessment 7) Communication plan 8) Budget estimation 9) Success criteria 10) Tracking and reporting system 11) Contingency plans",
+          "tags": ["project-management", "planning", "execution"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "prod009",
+          "title": "Distraction Eliminator",
+          "description": "Eliminate productivity killers",
+          "prompt": "You are a focus optimization specialist. Help me eliminate distractions for [WORK TYPE]. Analyze my distractions: [DISTRACTION LIST]. Provide: 1) Digital distraction blockers 2) Physical environment optimization 3) Communication boundaries 4) App and website restrictions 5) Notification management 6) Social media strategies 7) Alternative satisfactions 8) Accountability methods 9) Implementation timeline 10) Success tracking",
+          "tags": ["distractions", "focus", "self-control"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "prod010",
+          "title": "Weekly Planning Ritual",
+          "description": "Design effective weekly planning",
+          "prompt": "You are a weekly planning expert. Design a weekly planning ritual for [PROFESSION/ROLE]. Include: 1) Weekly review process 2) Goal setting for the week 3) Schedule blocking 4) Priority identification 5) Preparation tasks 6) Review of previous week 7) Adjustment of systems 8) Energy allocation 9) Personal and professional balance 10) Planning template 11) Optimal timing for planning session",
+          "tags": ["planning", "weekly-review", "organization"],
+          "difficulty": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "data-analysis",
+      "name": "Data Analysis & Insights",
+      "icon": "📊",
+      "description": "Prompts for data analysis, visualization, statistics, and data-driven insights",
+      "prompts": [
+        {
+          "id": "data001",
+          "title": "Data Analyst",
+          "description": "Analyze datasets comprehensively",
+          "prompt": "You are a data analyst. Analyze the following dataset: [DATASET DESCRIPTION/SAMPLE]. Provide: 1) Data overview and structure 2) Descriptive statistics 3) Data quality assessment 4) Missing data analysis 5) Distribution analysis 6) Correlation analysis 7) Outlier detection 8) Key insights and patterns 9) Anomalies and interesting findings 10) Visualization recommendations 11) Next steps for deeper analysis",
+          "tags": ["analysis", "statistics", "insights"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "data002",
+          "title": "SQL Query Writer",
+          "description": "Write complex SQL queries",
+          "prompt": "You are a SQL expert. Write SQL queries to [OBJECTIVE] from database with this schema: [SCHEMA]. Provide: 1) Complete query with comments 2) Query explanation 3) Performance optimization tips 4) Index recommendations 5) Alternative approaches 6) Expected result structure 7) Error handling 8) Test cases 9) Query complexity analysis",
+          "tags": ["sql", "database", "queries"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "data003",
+          "title": "Data Visualization Expert",
+          "description": "Design effective data visualizations",
+          "prompt": "You are a data visualization specialist. Create visualization recommendations for [DATA/INSIGHT]. Include: 1) Chart type selection and justification 2) Visual encoding (color, size, position) 3) Layout and composition 4) Interactivity features 5) Annotations and context 6) Accessibility considerations 7) Tool recommendations 8) Code/implementation examples 9) Alternative visualizations 10) Storytelling approach",
+          "tags": ["visualization", "charts", "presentation"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "data004",
+          "title": "Statistical Analysis Expert",
+          "description": "Perform statistical analyses",
+          "prompt": "You are a statistician. Perform statistical analysis on [PROBLEM/QUESTION] with data: [DATA DESCRIPTION]. Include: 1) Appropriate statistical tests 2) Hypothesis formulation 3) Assumptions checking 4) Test execution and results 5) P-value interpretation 6) Confidence intervals 7) Effect size calculation 8) Practical significance 9) Limitations and caveats 10) Recommendations 11) Code in [R/PYTHON]",
+          "tags": ["statistics", "hypothesis-testing", "analysis"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "data005",
+          "title": "Predictive Model Builder",
+          "description": "Build predictive models",
+          "prompt": "You are a machine learning engineer. Build a predictive model to [PREDICTION GOAL] using [DATA DESCRIPTION]. Provide: 1) Problem framing 2) Data preprocessing steps 3) Feature engineering 4) Model selection and rationale 5) Training approach 6) Hyperparameter tuning 7) Model evaluation metrics 8) Performance results 9) Model interpretation 10) Deployment recommendations 11) Code implementation",
+          "tags": ["machine-learning", "prediction", "modeling"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "data006",
+          "title": "Dashboard Designer",
+          "description": "Design analytical dashboards",
+          "prompt": "You are a dashboard design expert. Design a dashboard for [AUDIENCE/PURPOSE] tracking [METRICS]. Include: 1) Dashboard layout and structure 2) Key metrics and KPIs 3) Visualization types for each metric 4) Filters and controls 5) Drill-down capabilities 6) Update frequency 7) Data sources 8) Color scheme and branding 9) Mobile responsiveness 10) User interactions 11) Implementation in [TOOL]",
+          "tags": ["dashboards", "bi", "reporting"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "data007",
+          "title": "Data Cleaning Specialist",
+          "description": "Clean and prepare data",
+          "prompt": "You are a data cleaning specialist. Clean the following dataset: [DATASET DESCRIPTION]. Address: 1) Missing values (detection and handling) 2) Duplicate records 3) Outliers and anomalies 4) Data type inconsistencies 5) Format standardization 6) Invalid entries 7) Text cleaning 8) Date/time parsing 9) Encoding issues 10) Documentation of changes 11) Validation checks 12) Code in [PYTHON/R]",
+          "tags": ["data-cleaning", "preprocessing", "etl"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "data008",
+          "title": "A/B Test Analyzer",
+          "description": "Analyze A/B test results",
+          "prompt": "You are an A/B testing expert. Analyze this A/B test: Control: [METRICS], Variant: [METRICS], Sample size: [N]. Provide: 1) Test validity assessment 2) Statistical significance test 3) Confidence intervals 4) Practical significance 5) Effect size 6) Winner determination 7) Segmentation analysis 8) Statistical power 9) Recommendations 10) When to stop the test 11) Next test ideas",
+          "tags": ["ab-testing", "experimentation", "statistics"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "data009",
+          "title": "Cohort Analysis Expert",
+          "description": "Perform cohort analysis",
+          "prompt": "You are a cohort analysis specialist. Analyze cohort behavior for [PRODUCT/METRIC] with data: [DESCRIPTION]. Provide: 1) Cohort definition and grouping 2) Retention analysis 3) Behavior patterns by cohort 4) Trend identification 5) Cohort comparison 6) Visualization of cohorts 7) Key insights 8) Anomalies explanation 9) Actionable recommendations 10) SQL/Python code 11) Dashboard design",
+          "tags": ["cohort-analysis", "retention", "user-behavior"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "data010",
+          "title": "Data Storyteller",
+          "description": "Tell compelling stories with data",
+          "prompt": "You are a data storytelling expert. Create a data story about [INSIGHT/FINDING] for [AUDIENCE]. Include: 1) Narrative arc (setup, conflict, resolution) 2) Key message 3) Supporting data points 4) Visualizations with annotations 5) Context and comparisons 6) Emotional connection 7) Call to action 8) Anticipating objections 9) Memorable takeaways 10) Presentation flow 11) Storytelling techniques used",
+          "tags": ["storytelling", "presentation", "communication"],
+          "difficulty": "advanced"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "Design & UI/UX",
+      "icon": "🎨",
+      "description": "Prompts for design, user experience, user interface, and creative direction",
+      "prompts": [
+        {
+          "id": "des001",
+          "title": "UX Research Planner",
+          "description": "Plan user experience research",
+          "prompt": "You are a UX researcher. Plan a research study to [RESEARCH GOAL] for [PRODUCT/FEATURE]. Include: 1) Research questions 2) Methodology selection 3) Participant recruitment criteria 4) Sample size and rationale 5) Research protocol 6) Interview/survey questions 7) Task scenarios 8) Data collection methods 9) Analysis approach 10) Timeline and resources 11) Ethical considerations",
+          "tags": ["ux-research", "user-testing", "research"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "des002",
+          "title": "User Persona Creator",
+          "description": "Create detailed user personas",
+          "prompt": "You are a UX strategist. Create user personas for [PRODUCT/SERVICE]. For each persona, include: 1) Name and photo description 2) Demographics 3) Role and responsibilities 4) Goals and motivations 5) Frustrations and pain points 6) Behavior patterns 7) Technology proficiency 8) Quote that captures essence 9) User journey touchpoints 10) How product helps them 11) Design implications",
+          "tags": ["personas", "user-research", "ux"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "des003",
+          "title": "Wireframe Designer",
+          "description": "Design wireframes for interfaces",
+          "prompt": "You are a UX designer. Create wireframes for [SCREEN/FEATURE] that needs to [FUNCTIONALITY]. Provide: 1) Low-fidelity wireframe description 2) Layout structure and grid 3) Component placement and hierarchy 4) Navigation elements 5) Content prioritization 6) User flow 7) Interaction states 8) Annotations explaining decisions 9) Responsive considerations 10) Accessibility notes 11) ASCII art wireframe or detailed description",
+          "tags": ["wireframes", "design", "prototyping"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "des004",
+          "title": "UI Component Designer",
+          "description": "Design user interface components",
+          "prompt": "You are a UI designer. Design a [COMPONENT TYPE] for [USE CASE]. Include: 1) Visual design description 2) States (default, hover, active, disabled, error) 3) Variants and options 4) Spacing and dimensions 5) Typography 6) Color palette 7) Icons and imagery 8) Interactions and animations 9) Accessibility requirements 10) Responsive behavior 11) Design system integration 12) Implementation notes",
+          "tags": ["ui-design", "components", "design-system"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "des005",
+          "title": "User Journey Mapper",
+          "description": "Map complete user journeys",
+          "prompt": "You are a service designer. Map the user journey for [USER TYPE] trying to [GOAL/TASK]. Include: 1) Journey stages 2) User actions at each stage 3) Touchpoints and channels 4) User thoughts and emotions 5) Pain points and frustrations 6) Opportunities for improvement 7) Supporting quotes or data 8) Moments of truth 9) Behind-the-scenes actions 10) Success metrics 11) Recommendations",
+          "tags": ["user-journey", "service-design", "mapping"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "des006",
+          "title": "Design System Architect",
+          "description": "Create design system foundations",
+          "prompt": "You are a design systems architect. Create a design system foundation for [PRODUCT/BRAND]. Include: 1) Design principles 2) Color system (primary, secondary, semantic) 3) Typography scale 4) Spacing system 5) Grid system 6) Elevation and shadows 7) Border radius scale 8) Iconography guidelines 9) Component library structure 10) Naming conventions 11) Documentation approach 12) Governance model",
+          "tags": ["design-system", "design-tokens", "standards"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "des007",
+          "title": "Usability Audit Specialist",
+          "description": "Conduct usability audits",
+          "prompt": "You are a usability expert. Conduct a usability audit of [PRODUCT/WEBSITE]. Evaluate: 1) Navigation and information architecture 2) Visual hierarchy 3) Consistency and standards 4) Error prevention and handling 5) User control and freedom 6) Recognition vs. recall 7) Flexibility and efficiency 8) Aesthetic and minimalist design 9) Accessibility compliance 10) Mobile responsiveness 11) Prioritized issues with severity 12) Recommendations",
+          "tags": ["usability", "audit", "heuristics"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "des008",
+          "title": "Interaction Designer",
+          "description": "Design interactive experiences",
+          "prompt": "You are an interaction designer. Design interactions for [FEATURE/ACTION]. Include: 1) Interaction trigger 2) Micro-interactions description 3) Animation timing and easing 4) Feedback mechanisms 5) State transitions 6) Gesture support (if applicable) 7) Sound design (if applicable) 8) Edge cases 9) Accessibility considerations 10) Performance impact 11) Implementation guidance 12) Prototype description",
+          "tags": ["interaction-design", "micro-interactions", "animation"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "des009",
+          "title": "Information Architect",
+          "description": "Design information architecture",
+          "prompt": "You are an information architect. Design the information architecture for [WEBSITE/APP]. Provide: 1) Content inventory and audit 2) User mental models 3) Site map/structure 4) Navigation system (primary, secondary, utility) 5) Taxonomy and categorization 6) Labeling system 7) Search functionality 8) Metadata structure 9) Card sorting insights 10) Tree testing recommendations 11) Documentation",
+          "tags": ["information-architecture", "navigation", "structure"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "des010",
+          "title": "Accessibility Specialist",
+          "description": "Design for accessibility",
+          "prompt": "You are an accessibility specialist. Ensure [PRODUCT/FEATURE] is accessible. Provide: 1) WCAG compliance checklist 2) Color contrast audit 3) Keyboard navigation support 4) Screen reader optimization 5) Focus management 6) Alt text guidelines 7) ARIA labels and roles 8) Form accessibility 9) Error identification 10) Testing with assistive tech 11) Accessible alternatives 12) Remediation priorities",
+          "tags": ["accessibility", "a11y", "inclusive-design"],
+          "difficulty": "advanced"
+        }
+      ]
+    }
+  ]
+}
