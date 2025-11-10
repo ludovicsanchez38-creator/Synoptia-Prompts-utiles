@@ -589,6 +589,46 @@
           "prompt": "You are a crisis management consultant. Develop a crisis management plan for [SITUATION/SCENARIO]. Include: 1) Crisis assessment and classification 2) Immediate response actions 3) Communication strategy (internal and external) 4) Key messaging and talking points 5) Stakeholder management 6) Media relations approach 7) Social media strategy 8) Legal considerations 9) Business continuity measures 10) Post-crisis recovery plan 11) Lessons learned process",
           "tags": ["crisis-management", "risk", "communications"],
           "difficulty": "advanced"
+        },
+        {
+          "id": "biz011",
+          "title": "Financial Forecasting Expert",
+          "description": "Create accurate financial projections",
+          "prompt": "You are a financial planning expert. Create financial forecasts for [BUSINESS] over [TIME PERIOD]. Include: 1) Revenue projections with assumptions 2) Cost structure and expenses 3) Cash flow forecast 4) Break-even analysis 5) Profit and loss statement 6) Balance sheet projections 7) Key financial ratios 8) Scenario analysis (best/worst/likely) 9) Capital requirements 10) Sensitivity analysis 11) Financial milestones",
+          "tags": ["financial-planning", "forecasting", "projections"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz012",
+          "title": "Digital Transformation Strategist",
+          "description": "Lead digital transformation initiatives",
+          "prompt": "You are a digital transformation consultant. Design a digital transformation roadmap for [ORGANIZATION]. Provide: 1) Current state assessment 2) Digital maturity analysis 3) Vision and objectives 4) Technology stack recommendations 5) Process digitization priorities 6) Data and analytics strategy 7) Change management plan 8) Skills and training needs 9) Implementation phases 10) Quick wins identification 11) ROI projections 12) Risk mitigation",
+          "tags": ["digital-transformation", "innovation", "technology"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz013",
+          "title": "Pricing Strategy Designer",
+          "description": "Optimize pricing for profitability",
+          "prompt": "You are a pricing strategist. Design a pricing strategy for [PRODUCT/SERVICE]. Include: 1) Cost-based pricing analysis 2) Value-based pricing approach 3) Competitive pricing analysis 4) Price elasticity considerations 5) Pricing models (subscription/usage/tiered/etc.) 6) Discount and promotion strategy 7) Price positioning 8) A/B testing plan 9) Psychology of pricing 10) Price communication strategy 11) Pricing optimization over time",
+          "tags": ["pricing", "strategy", "monetization"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz014",
+          "title": "Supply Chain Optimizer",
+          "description": "Optimize supply chain operations",
+          "prompt": "You are a supply chain expert. Optimize the supply chain for [BUSINESS/PRODUCT]. Provide: 1) Supply chain mapping 2) Supplier evaluation and selection 3) Inventory optimization 4) Logistics and distribution strategy 5) Demand forecasting 6) Risk management 7) Cost reduction opportunities 8) Technology integration 9) Sustainability considerations 10) Performance metrics 11) Contingency planning",
+          "tags": ["supply-chain", "operations", "logistics"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "biz015",
+          "title": "Sustainability Strategy Consultant",
+          "description": "Develop corporate sustainability initiatives",
+          "prompt": "You are a sustainability consultant. Create a sustainability strategy for [COMPANY]. Include: 1) Sustainability assessment and baseline 2) Material issues identification 3) Goals and targets (ESG framework) 4) Carbon footprint reduction plan 5) Circular economy initiatives 6) Supplier sustainability program 7) Reporting and transparency 8) Stakeholder engagement 9) Investment requirements 10) Impact measurement 11) Certification and standards 12) Communication strategy",
+          "tags": ["sustainability", "esg", "corporate-responsibility"],
+          "difficulty": "advanced"
         }
       ]
     },
@@ -676,6 +716,46 @@
           "description": "Create engaging learning activities",
           "prompt": "You are an instructional designer. Create 10 engaging learning activities for [TOPIC] at [LEVEL]. For each activity, provide: 1) Activity name and type 2) Learning objectives 3) Duration 4) Materials needed 5) Step-by-step instructions 6) Variations 7) Assessment method 8) Technology integration options 9) Reflection prompts. Include a mix of individual, pair, and group activities.",
           "tags": ["activities", "engagement", "instruction"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "edu011",
+          "title": "Gamification Designer",
+          "description": "Add game elements to learning",
+          "prompt": "You are a gamification expert. Design gamified learning experience for [SUBJECT/TOPIC] for [AUDIENCE]. Include: 1) Learning objectives mapped to game mechanics 2) Point system and scoring 3) Badges and achievements 4) Leaderboards and competition 5) Narrative and storyline 6) Progress visualization 7) Challenges and quests 8) Rewards and unlockables 9) Social features 10) Feedback loops 11) Implementation platform",
+          "tags": ["gamification", "engagement", "motivation"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "edu012",
+          "title": "Microlearning Creator",
+          "description": "Design bite-sized learning content",
+          "prompt": "You are a microlearning specialist. Create microlearning modules for [TOPIC]. For each module provide: 1) Single learning objective 2) 3-5 minute content format 3) Multimedia elements 4) Key takeaways 5) Quick assessment 6) Practical application 7) Spaced repetition strategy 8) Mobile-friendly design 9) Engagement hooks 10) Series structure. Create 10 microlearning modules.",
+          "tags": ["microlearning", "mobile-learning", "content"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "edu013",
+          "title": "Learning Analytics Expert",
+          "description": "Analyze learning data and outcomes",
+          "prompt": "You are a learning analytics specialist. Analyze learning data for [COURSE/PROGRAM]. Provide: 1) Key performance indicators 2) Engagement metrics analysis 3) Completion and dropout patterns 4) Assessment performance trends 5) Learning path optimization 6) Learner segmentation 7) Predictive analytics for at-risk learners 8) Intervention strategies 9) Dashboard design 10) Actionable recommendations 11) ROI of learning initiatives",
+          "tags": ["analytics", "data-driven", "assessment"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "edu014",
+          "title": "Inclusive Education Specialist",
+          "description": "Design inclusive learning experiences",
+          "prompt": "You are an inclusive education expert. Design an inclusive learning experience for [TOPIC] that accommodates [DIVERSE LEARNER NEEDS]. Include: 1) Universal Design for Learning (UDL) principles 2) Multiple means of representation 3) Multiple means of engagement 4) Multiple means of expression 5) Assistive technology integration 6) Cultural responsiveness 7) Language support 8) Sensory considerations 9) Social-emotional support 10) Family engagement 11) Progress monitoring",
+          "tags": ["inclusive-education", "udl", "accessibility"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "edu015",
+          "title": "Peer Learning Facilitator",
+          "description": "Design peer-to-peer learning activities",
+          "prompt": "You are a collaborative learning expert. Design peer learning activities for [SUBJECT/TOPIC]. Provide: 1) Learning objectives 2) Group formation strategy 3) Peer teaching structure 4) Collaborative tasks 5) Role assignments 6) Peer feedback protocols 7) Accountability measures 8) Conflict resolution strategies 9) Facilitator guide 10) Assessment rubric for collaboration 11) Reflection activities 12) Technology tools to support collaboration",
+          "tags": ["peer-learning", "collaboration", "group-work"],
           "difficulty": "intermediate"
         }
       ]
@@ -765,6 +845,46 @@
           "prompt": "You are a weekly planning expert. Design a weekly planning ritual for [PROFESSION/ROLE]. Include: 1) Weekly review process 2) Goal setting for the week 3) Schedule blocking 4) Priority identification 5) Preparation tasks 6) Review of previous week 7) Adjustment of systems 8) Energy allocation 9) Personal and professional balance 10) Planning template 11) Optimal timing for planning session",
           "tags": ["planning", "weekly-review", "organization"],
           "difficulty": "intermediate"
+        },
+        {
+          "id": "prod011",
+          "title": "Note-Taking System Designer",
+          "description": "Create effective note-taking systems",
+          "prompt": "You are a knowledge management expert. Design a note-taking system for [PURPOSE/PROFESSION]. Include: 1) Note-taking method (Zettelkasten/Cornell/etc.) 2) Organization structure 3) Tagging and linking strategy 4) Tools and apps 5) Capture workflow 6) Processing and refining 7) Retrieval and search 8) Knowledge synthesis 9) Review cadence 10) Digital vs. analog balance 11) Templates and formats",
+          "tags": ["note-taking", "knowledge-management", "pkm"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "prod012",
+          "title": "Automation Specialist",
+          "description": "Automate repetitive tasks",
+          "prompt": "You are an automation expert. Identify and automate repetitive tasks for [WORKFLOW/ROLE]. Provide: 1) Task audit and categorization 2) Automation opportunities ranked by ROI 3) Tool recommendations (Zapier/Make/n8n/etc.) 4) Workflow automation designs 5) Triggers and actions 6) Error handling 7) Testing procedures 8) Monitoring and maintenance 9) Time savings calculation 10) Step-by-step setup guides 11) Advanced automation ideas",
+          "tags": ["automation", "efficiency", "tools"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "prod013",
+          "title": "Deep Work Architect",
+          "description": "Design deep work practices",
+          "prompt": "You are a deep work expert. Create a deep work system for [PROFESSION/GOAL]. Include: 1) Deep work schedule and rituals 2) Environment optimization 3) Distraction elimination protocols 4) Focus techniques and methods 5) Work blocks structure 6) Transition rituals 7) Recovery and breaks 8) Progress tracking 9) Shallow work batching 10) Digital minimalism strategies 11) 4-week implementation plan 12) Measurement metrics",
+          "tags": ["deep-work", "focus", "productivity"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "prod014",
+          "title": "Decision-Making Framework",
+          "description": "Improve decision-making speed and quality",
+          "prompt": "You are a decision-making expert. Create a decision-making framework for [CONTEXT/ROLE]. Provide: 1) Decision categorization (reversible/irreversible) 2) Decision-making matrix 3) Information gathering process 4) Criteria and prioritization 5) Mental models to use 6) Common cognitive biases to avoid 7) When to decide fast vs. slow 8) Consultation guidelines 9) Documentation template 10) Review and learning process 11) Decision-making heuristics",
+          "tags": ["decision-making", "mental-models", "efficiency"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "prod015",
+          "title": "Personal Operating System",
+          "description": "Design comprehensive productivity system",
+          "prompt": "You are a productivity systems architect. Design a personal operating system for [GOALS/LIFESTYLE]. Create comprehensive system with: 1) Vision and values alignment 2) Goal-setting framework 3) Task management system 4) Time blocking template 5) Energy management 6) Habit tracking 7) Knowledge management 8) Health and wellness integration 9) Review systems (daily/weekly/monthly/quarterly) 10) Tools stack 11) Emergency protocols 12) System maintenance",
+          "tags": ["productivity-system", "life-management", "optimization"],
+          "difficulty": "advanced"
         }
       ]
     },
@@ -853,6 +973,46 @@
           "prompt": "You are a data storytelling expert. Create a data story about [INSIGHT/FINDING] for [AUDIENCE]. Include: 1) Narrative arc (setup, conflict, resolution) 2) Key message 3) Supporting data points 4) Visualizations with annotations 5) Context and comparisons 6) Emotional connection 7) Call to action 8) Anticipating objections 9) Memorable takeaways 10) Presentation flow 11) Storytelling techniques used",
           "tags": ["storytelling", "presentation", "communication"],
           "difficulty": "advanced"
+        },
+        {
+          "id": "data011",
+          "title": "ETL Pipeline Designer",
+          "description": "Design data extraction and transformation pipelines",
+          "prompt": "You are a data engineering expert. Design an ETL pipeline for [DATA SOURCE] to [DESTINATION]. Include: 1) Data extraction strategy 2) Transformation logic and rules 3) Data quality checks 4) Error handling and logging 5) Scheduling and orchestration 6) Performance optimization 7) Monitoring and alerting 8) Documentation 9) Testing strategy 10) Scalability considerations 11) Code implementation in [PYTHON/SQL/etc.]",
+          "tags": ["etl", "data-engineering", "pipelines"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "data012",
+          "title": "Business Intelligence Analyst",
+          "description": "Create actionable business insights",
+          "prompt": "You are a business intelligence analyst. Analyze [BUSINESS AREA] data and provide insights. Include: 1) Business context and questions 2) Data sources and preparation 3) Analysis methodology 4) Key findings and insights 5) Trends and patterns 6) Anomalies and outliers 7) Recommendations 8) Visualization strategy 9) Impact quantification 10) Next steps 11) Executive summary",
+          "tags": ["business-intelligence", "insights", "analysis"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "data013",
+          "title": "Data Governance Specialist",
+          "description": "Implement data governance frameworks",
+          "prompt": "You are a data governance expert. Design a data governance framework for [ORGANIZATION]. Provide: 1) Data governance charter 2) Roles and responsibilities 3) Data quality standards 4) Metadata management 5) Data lifecycle management 6) Access control and security 7) Compliance requirements 8) Data catalog setup 9) Policies and procedures 10) Metrics and KPIs 11) Implementation roadmap",
+          "tags": ["data-governance", "compliance", "data-quality"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "data014",
+          "title": "Real-Time Analytics Designer",
+          "description": "Build real-time analytics systems",
+          "prompt": "You are a real-time analytics expert. Design a real-time analytics system for [USE CASE]. Include: 1) Architecture design 2) Data streaming setup (Kafka/Kinesis/etc.) 3) Processing framework (Spark/Flink/etc.) 4) Storage solution 5) Query optimization 6) Latency requirements 7) Scalability strategy 8) Monitoring and alerting 9) Fault tolerance 10) Cost optimization 11) Implementation guide",
+          "tags": ["real-time", "streaming", "analytics"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "data015",
+          "title": "Customer Analytics Expert",
+          "description": "Analyze customer behavior and metrics",
+          "prompt": "You are a customer analytics expert. Analyze customer data for [BUSINESS]. Provide: 1) Customer segmentation 2) Customer lifetime value (CLV) analysis 3) Churn prediction and factors 4) Purchase behavior patterns 5) Customer journey analysis 6) RFM analysis 7) Cohort analysis 8) Attribution modeling 9) Personalization opportunities 10) Actionable recommendations 11) Visualization dashboard 12) Implementation in [TOOL]",
+          "tags": ["customer-analytics", "segmentation", "clv"],
+          "difficulty": "advanced"
         }
       ]
     },
@@ -940,6 +1100,430 @@
           "description": "Design for accessibility",
           "prompt": "You are an accessibility specialist. Ensure [PRODUCT/FEATURE] is accessible. Provide: 1) WCAG compliance checklist 2) Color contrast audit 3) Keyboard navigation support 4) Screen reader optimization 5) Focus management 6) Alt text guidelines 7) ARIA labels and roles 8) Form accessibility 9) Error identification 10) Testing with assistive tech 11) Accessible alternatives 12) Remediation priorities",
           "tags": ["accessibility", "a11y", "inclusive-design"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "des011",
+          "title": "Design Critique Facilitator",
+          "description": "Lead effective design critique sessions",
+          "prompt": "You are a design critique expert. Facilitate a design critique for [DESIGN/PROJECT]. Structure: 1) Critique objectives and context 2) Presentation guidelines 3) Critique framework (form, function, content) 4) Question prompts 5) Feedback structure 6) Constructive criticism techniques 7) Actionable takeaways 8) Documentation method 9) Follow-up process 10) Psychological safety practices 11) Time management",
+          "tags": ["critique", "feedback", "collaboration"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "des012",
+          "title": "Motion Design Specialist",
+          "description": "Design animations and transitions",
+          "prompt": "You are a motion design expert. Design motion and animation for [INTERFACE/FEATURE]. Include: 1) Animation purpose and goals 2) Timing and easing functions 3) Animation choreography 4) Transition states 5) Micro-interactions 6) Loading and skeleton states 7) Success/error animations 8) Attention direction 9) Performance considerations 10) Accessibility (reduced motion) 11) Implementation specifications 12) Prototype or code examples",
+          "tags": ["motion-design", "animation", "transitions"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "des013",
+          "title": "Design System Documentation",
+          "description": "Document design systems effectively",
+          "prompt": "You are a design documentation specialist. Create comprehensive documentation for [DESIGN SYSTEM]. Include: 1) Getting started guide 2) Design principles 3) Component documentation with examples 4) Usage guidelines and do's/don'ts 5) Code snippets 6) Accessibility guidelines 7) Contribution process 8) Version history 9) FAQ 10) Resources and tools 11) Search and navigation 12) Maintenance process",
+          "tags": ["documentation", "design-system", "guidelines"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "des014",
+          "title": "Mobile-First Designer",
+          "description": "Design mobile-first experiences",
+          "prompt": "You are a mobile-first design expert. Design [FEATURE/INTERFACE] with mobile-first approach. Provide: 1) Mobile screen designs (320px, 375px, 414px) 2) Touch target optimization 3) Thumb zone consideration 4) Progressive disclosure 5) Mobile navigation patterns 6) Performance optimization 7) Offline considerations 8) Device-specific features 9) Responsive breakpoints 10) Tablet and desktop adaptations 11) Interaction patterns 12) Testing checklist",
+          "tags": ["mobile-design", "responsive", "mobile-first"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "des015",
+          "title": "Dark Mode Designer",
+          "description": "Design effective dark mode interfaces",
+          "prompt": "You are a dark mode design specialist. Design dark mode for [INTERFACE/APPLICATION]. Include: 1) Color palette for dark mode 2) Contrast ratios and accessibility 3) Surface elevation system 4) Text and icon adjustments 5) Image and media handling 6) Brand color adaptations 7) Toggle implementation 8) User preference detection 9) Consistency across screens 10) Edge cases and states 11) Implementation guidelines 12) Testing across devices",
+          "tags": ["dark-mode", "color", "accessibility"],
+          "difficulty": "advanced"
+        }
+      ]
+    },
+    {
+      "id": "ai-ml",
+      "name": "AI/ML & Data Science",
+      "icon": "🤖",
+      "description": "Prompts for artificial intelligence, machine learning, data science, and advanced analytics",
+      "prompts": [
+        {
+          "id": "ai001",
+          "title": "Machine Learning Model Builder",
+          "description": "Design and implement ML models from scratch",
+          "prompt": "You are a machine learning engineer. Build a machine learning model to [PREDICTION TASK] using [DATASET DESCRIPTION]. Provide: 1) Problem formulation and success metrics 2) Data exploration and preprocessing pipeline 3) Feature engineering strategy 4) Model architecture selection (explain trade-offs) 5) Training strategy and hyperparameters 6) Cross-validation approach 7) Evaluation metrics and results 8) Model interpretation techniques 9) Production deployment considerations 10) Monitoring and retraining strategy 11) Complete code in [PYTHON/R]",
+          "tags": ["machine-learning", "modeling", "data-science"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai002",
+          "title": "Deep Learning Architect",
+          "description": "Design neural network architectures",
+          "prompt": "You are a deep learning architect. Design a neural network for [TASK: image classification/NLP/time series/etc.] with these requirements: [REQUIREMENTS]. Include: 1) Network architecture diagram and layer details 2) Activation functions and rationale 3) Loss function selection 4) Optimization algorithm 5) Regularization techniques 6) Data augmentation strategy 7) Training pipeline 8) Hyperparameter tuning approach 9) Transfer learning opportunities 10) Implementation in [PYTORCH/TENSORFLOW/JAX]",
+          "tags": ["deep-learning", "neural-networks", "architecture"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai003",
+          "title": "NLP Engineer",
+          "description": "Build natural language processing solutions",
+          "prompt": "You are an NLP engineer. Build a natural language processing system for [TASK: sentiment analysis/named entity recognition/text generation/etc.]. Provide: 1) Problem analysis and approach 2) Text preprocessing pipeline 3) Tokenization strategy 4) Model selection (traditional ML vs. transformers) 5) Training data preparation 6) Fine-tuning strategy if using pre-trained models 7) Evaluation metrics 8) Inference optimization 9) Handling edge cases 10) Code implementation with [LIBRARY]",
+          "tags": ["nlp", "transformers", "text-processing"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai004",
+          "title": "Computer Vision Specialist",
+          "description": "Develop computer vision applications",
+          "prompt": "You are a computer vision expert. Develop a computer vision solution for [TASK: object detection/segmentation/face recognition/etc.]. Include: 1) Problem breakdown 2) Dataset requirements and augmentation 3) Model architecture (CNN/YOLO/R-CNN/etc.) 4) Pre-trained model selection 5) Transfer learning approach 6) Training pipeline 7) Post-processing techniques 8) Performance optimization 9) Real-time inference considerations 10) Implementation with [OPENCV/PYTORCH/TENSORFLOW]",
+          "tags": ["computer-vision", "image-processing", "deep-learning"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai005",
+          "title": "LLM Prompt Engineer",
+          "description": "Craft effective prompts for large language models",
+          "prompt": "You are a prompt engineering expert. Design optimized prompts for [USE CASE] using [GPT-4/CLAUDE/GEMINI/etc.]. Provide: 1) Zero-shot prompt version 2) Few-shot prompt with examples 3) Chain-of-thought prompt 4) System message design 5) Output format specification 6) Temperature and parameter recommendations 7) Prompt testing and iteration strategy 8) Edge case handling 9) Cost optimization techniques 10) Evaluation criteria",
+          "tags": ["llm", "prompt-engineering", "ai"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "ai006",
+          "title": "RAG System Designer",
+          "description": "Build Retrieval-Augmented Generation systems",
+          "prompt": "You are a RAG system architect. Design a Retrieval-Augmented Generation system for [APPLICATION]. Include: 1) Document ingestion and preprocessing 2) Chunking strategy and rationale 3) Embedding model selection 4) Vector database choice 5) Retrieval algorithm 6) Reranking approach 7) Context injection strategy 8) LLM integration 9) Evaluation metrics 10) Scaling considerations 11) Implementation code",
+          "tags": ["rag", "vector-database", "llm"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai007",
+          "title": "Time Series Forecaster",
+          "description": "Build time series forecasting models",
+          "prompt": "You are a time series forecasting expert. Build a forecasting model for [METRIC/DATA] with [FORECAST HORIZON]. Provide: 1) Exploratory data analysis 2) Stationarity testing 3) Seasonality and trend decomposition 4) Model selection (ARIMA/Prophet/LSTM/etc.) 5) Feature engineering for temporal data 6) Train/validation/test split strategy 7) Model training and tuning 8) Forecast evaluation metrics 9) Confidence intervals 10) Production pipeline 11) Code implementation",
+          "tags": ["time-series", "forecasting", "prediction"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai008",
+          "title": "Recommendation System Builder",
+          "description": "Design personalized recommendation engines",
+          "prompt": "You are a recommendation systems expert. Build a recommendation engine for [PLATFORM/PRODUCT]. Include: 1) Recommendation approach (collaborative/content-based/hybrid) 2) Data requirements and schema 3) Similarity metrics 4) Matrix factorization techniques 5) Deep learning approaches 6) Cold start problem solutions 7) Diversity and exploration strategies 8) Evaluation metrics (precision@k, NDCG, etc.) 9) A/B testing framework 10) Scalability considerations 11) Implementation",
+          "tags": ["recommendation-systems", "personalization", "ml"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai009",
+          "title": "Anomaly Detection Expert",
+          "description": "Detect anomalies in data",
+          "prompt": "You are an anomaly detection specialist. Design an anomaly detection system for [DATA TYPE/USE CASE]. Provide: 1) Anomaly definition and types 2) Statistical methods (z-score, IQR, etc.) 3) Machine learning approaches (Isolation Forest, Autoencoders) 4) Feature engineering 5) Threshold determination 6) Real-time vs. batch processing 7) False positive management 8) Alert system design 9) Model monitoring 10) Implementation code 11) Visualization strategies",
+          "tags": ["anomaly-detection", "outliers", "monitoring"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai010",
+          "title": "AI Ethics Consultant",
+          "description": "Assess and mitigate AI ethical risks",
+          "prompt": "You are an AI ethics expert. Evaluate the ethical implications of [AI SYSTEM/MODEL]. Analyze: 1) Bias and fairness assessment 2) Data privacy concerns 3) Transparency and explainability 4) Accountability framework 5) Potential misuse scenarios 6) Stakeholder impact analysis 7) Regulatory compliance (GDPR, AI Act, etc.) 8) Mitigation strategies 9) Ethical guidelines documentation 10) Monitoring and auditing procedures 11) Diverse team considerations",
+          "tags": ["ai-ethics", "fairness", "responsible-ai"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai011",
+          "title": "Feature Engineering Specialist",
+          "description": "Create powerful features for ML models",
+          "prompt": "You are a feature engineering expert. Design features for [PREDICTION TASK] using [DATA DESCRIPTION]. Include: 1) Domain knowledge integration 2) Feature extraction techniques 3) Feature transformation methods 4) Interaction features 5) Temporal features 6) Categorical encoding strategies 7) Feature scaling and normalization 8) Dimensionality reduction 9) Feature selection methods 10) Feature importance analysis 11) Code implementation",
+          "tags": ["feature-engineering", "ml", "data-science"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "ai012",
+          "title": "Model Interpretability Expert",
+          "description": "Explain ML model predictions",
+          "prompt": "You are a model interpretability specialist. Make this [MODEL TYPE] interpretable for [STAKEHOLDERS]. Provide: 1) Global interpretability techniques (feature importance, PDP) 2) Local interpretability methods (LIME, SHAP) 3) Model-agnostic approaches 4) Visualization strategies 5) Counterfactual explanations 6) Trust and calibration metrics 7) Documentation for non-technical users 8) Interactive explanation tools 9) Regulatory compliance 10) Implementation code 11) Validation of explanations",
+          "tags": ["interpretability", "explainability", "xai"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai013",
+          "title": "AutoML Pipeline Designer",
+          "description": "Build automated machine learning pipelines",
+          "prompt": "You are an AutoML expert. Design an automated ML pipeline for [TASK]. Include: 1) Data validation and quality checks 2) Automated feature engineering 3) Model selection strategy 4) Hyperparameter optimization (Bayesian/Grid/Random) 5) Ensemble methods 6) Pipeline orchestration 7) Experiment tracking 8) Model versioning 9) Automated evaluation and reporting 10) CI/CD integration 11) Implementation using [TOOL: MLflow/Kubeflow/etc.]",
+          "tags": ["automl", "mlops", "automation"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai014",
+          "title": "Reinforcement Learning Designer",
+          "description": "Build RL agents and environments",
+          "prompt": "You are a reinforcement learning expert. Design an RL solution for [PROBLEM: game/robotics/optimization]. Provide: 1) Problem formulation (states, actions, rewards) 2) Environment design 3) RL algorithm selection (DQN/PPO/A3C/etc.) 4) Neural network architecture 5) Exploration vs. exploitation strategy 6) Reward shaping 7) Training procedure 8) Evaluation metrics 9) Stability and convergence techniques 10) Deployment considerations 11) Code implementation",
+          "tags": ["reinforcement-learning", "rl", "agents"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "ai015",
+          "title": "MLOps Engineer",
+          "description": "Deploy and maintain ML systems in production",
+          "prompt": "You are an MLOps engineer. Build a production ML system for [MODEL/APPLICATION]. Include: 1) Model training pipeline 2) Model versioning and registry 3) CI/CD for ML 4) Model serving architecture 5) Monitoring and logging 6) A/B testing framework 7) Data drift detection 8) Model retraining triggers 9) Rollback procedures 10) Scalability and performance 11) Infrastructure as code 12) Cost optimization",
+          "tags": ["mlops", "deployment", "production"],
+          "difficulty": "advanced"
+        }
+      ]
+    },
+    {
+      "id": "sales",
+      "name": "Sales & Customer Success",
+      "icon": "💼",
+      "description": "Prompts for sales strategies, customer relationship management, and growth tactics",
+      "prompts": [
+        {
+          "id": "sales001",
+          "title": "Sales Pitch Creator",
+          "description": "Craft compelling sales pitches",
+          "prompt": "You are a sales expert. Create a sales pitch for [PRODUCT/SERVICE] targeting [CUSTOMER PROFILE]. Include: 1) Attention-grabbing opening 2) Problem identification and pain points 3) Solution presentation 4) Unique value proposition 5) Social proof and testimonials 6) Handling common objections 7) Clear call-to-action 8) Closing techniques 9) Follow-up strategy 10) Multiple pitch variations (elevator/phone/email/in-person) 11) Customization tips",
+          "tags": ["sales", "pitch", "persuasion"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "sales002",
+          "title": "Cold Outreach Strategist",
+          "description": "Design effective cold outreach campaigns",
+          "prompt": "You are a cold outreach specialist. Design a cold outreach campaign for [PRODUCT/SERVICE] to [TARGET AUDIENCE]. Provide: 1) Prospect research strategy 2) Multi-channel approach (email, LinkedIn, phone) 3) Personalization framework 4) Email sequence (5-7 emails) 5) Subject line variations 6) Value-first messaging 7) Social proof integration 8) Timing and cadence 9) A/B testing plan 10) Response handling 11) Metrics to track",
+          "tags": ["cold-outreach", "prospecting", "lead-generation"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "sales003",
+          "title": "Sales Objection Handler",
+          "description": "Overcome sales objections effectively",
+          "prompt": "You are a sales objection handling expert. Create responses for common objections when selling [PRODUCT/SERVICE]. For each objection: 1) \"It's too expensive\" 2) \"I need to think about it\" 3) \"We're happy with our current solution\" 4) \"I don't have the budget\" 5) \"Send me information and I'll get back to you\" 6) \"I need to talk to my team\" 7) [CUSTOM OBJECTION]. Provide: a) Empathy statement b) Reframe technique c) Proof point d) Trial close e) Alternative approach",
+          "tags": ["objection-handling", "sales", "negotiation"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "sales004",
+          "title": "Customer Success Playbook",
+          "description": "Design customer success strategies",
+          "prompt": "You are a customer success leader. Create a customer success playbook for [PRODUCT/SERVICE]. Include: 1) Customer journey mapping 2) Onboarding process and checklist 3) Success milestones 4) Health score framework 5) Proactive touchpoint strategy 6) Expansion and upsell triggers 7) Churn risk indicators 8) Retention tactics 9) Customer feedback loops 10) CSM team structure 11) Success metrics (NPS, CSAT, retention)",
+          "tags": ["customer-success", "retention", "onboarding"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "sales005",
+          "title": "Value Proposition Designer",
+          "description": "Craft compelling value propositions",
+          "prompt": "You are a value proposition expert. Create a powerful value proposition for [PRODUCT/SERVICE] targeting [MARKET]. Develop: 1) Customer jobs to be done 2) Pains and frustrations 3) Gains and desires 4) Pain relievers (how you solve problems) 5) Gain creators (how you create value) 6) Products and services 7) Value proposition statement 8) Unique differentiators 9) Proof points and evidence 10) Messaging for different segments 11) Visual value proposition canvas",
+          "tags": ["value-proposition", "positioning", "messaging"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "sales006",
+          "title": "Sales Funnel Optimizer",
+          "description": "Optimize sales funnels for conversions",
+          "prompt": "You are a sales funnel expert. Analyze and optimize the sales funnel for [BUSINESS/PRODUCT]. Provide: 1) Funnel stage breakdown 2) Conversion rate analysis by stage 3) Bottleneck identification 4) Lead qualification framework 5) Lead nurturing strategy 6) Sales enablement content 7) Automation opportunities 8) Follow-up sequences 9) Win/loss analysis 10) Pipeline velocity metrics 11) Optimization recommendations",
+          "tags": ["sales-funnel", "conversion", "optimization"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "sales007",
+          "title": "Account-Based Sales Planner",
+          "description": "Execute account-based sales strategies",
+          "prompt": "You are an account-based sales expert. Create an ABM strategy for [TARGET ACCOUNTS/INDUSTRY]. Include: 1) Ideal customer profile 2) Account selection criteria 3) Account research framework 4) Stakeholder mapping 5) Personalized outreach plan 6) Multi-threading strategy 7) Value messaging by persona 8) Content and assets needed 9) Sales and marketing alignment 10) Engagement metrics 11) Deal progression framework",
+          "tags": ["account-based-sales", "enterprise-sales", "abm"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "sales008",
+          "title": "Negotiation Strategist",
+          "description": "Master sales negotiations",
+          "prompt": "You are a negotiation expert. Prepare a negotiation strategy for [DEAL/SITUATION]. Provide: 1) Pre-negotiation research 2) BATNA (Best Alternative) identification 3) Walk-away point 4) Value creation opportunities 5) Concession strategy 6) Anchoring techniques 7) Common negotiation tactics and counters 8) Pricing discussion framework 9) Contract terms to negotiate 10) Closing techniques 11) Post-negotiation follow-up",
+          "tags": ["negotiation", "closing", "deal-making"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "sales009",
+          "title": "Customer Retention Specialist",
+          "description": "Reduce churn and increase retention",
+          "prompt": "You are a customer retention expert. Create a retention strategy for [PRODUCT/SERVICE]. Include: 1) Churn analysis and patterns 2) At-risk customer identification 3) Proactive intervention triggers 4) Win-back campaign for churned customers 5) Customer feedback analysis 6) Product adoption strategies 7) Value realization program 8) Loyalty program design 9) Community building tactics 10) Retention metrics dashboard 11) Team playbooks",
+          "tags": ["retention", "churn-reduction", "loyalty"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "sales010",
+          "title": "Discovery Call Framework",
+          "description": "Master discovery and qualification calls",
+          "prompt": "You are a discovery call expert. Create a discovery call framework for selling [PRODUCT/SERVICE]. Include: 1) Pre-call research checklist 2) Opening and rapport building 3) Qualification questions (BANT/MEDDIC/etc.) 4) Pain discovery questions 5) Current situation exploration 6) Decision process understanding 7) Budget discussion approach 8) Timeline identification 9) Stakeholder mapping 10) Next steps and commitment 11) Call script template 12) Post-call documentation",
+          "tags": ["discovery", "qualification", "sales-process"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "sales011",
+          "title": "Upsell & Cross-Sell Strategist",
+          "description": "Expand revenue from existing customers",
+          "prompt": "You are an expansion revenue expert. Design an upsell and cross-sell strategy for [PRODUCT/SERVICE]. Provide: 1) Customer segmentation for expansion 2) Expansion opportunity triggers 3) Product/feature recommendations by segment 4) Timing and approach strategy 5) Value demonstration techniques 6) Pricing and packaging 7) Sales play templates 8) Customer success alignment 9) Objection handling 10) Success metrics 11) Pilot/trial strategies",
+          "tags": ["upsell", "cross-sell", "expansion-revenue"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "sales012",
+          "title": "Sales Presentation Designer",
+          "description": "Create persuasive sales presentations",
+          "prompt": "You are a sales presentation expert. Design a compelling sales presentation for [PRODUCT/SERVICE] to [AUDIENCE]. Include: 1) Presentation structure and flow 2) Opening hook 3) Problem and impact slides 4) Solution demonstration 5) Differentiation and competitive positioning 6) ROI and value quantification 7) Social proof and case studies 8) Demo strategy 9) Handling questions 10) Clear call-to-action 11) Slide-by-slide content 12) Storytelling techniques",
+          "tags": ["presentation", "demo", "storytelling"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "sales013",
+          "title": "Sales Territory Planner",
+          "description": "Optimize sales territory planning",
+          "prompt": "You are a sales operations expert. Design a territory plan for [SALES TEAM/REGION]. Provide: 1) Territory segmentation criteria 2) Account assignment strategy 3) Territory sizing and balance 4) Quota allocation methodology 5) Coverage model 6) Resource allocation 7) Performance metrics by territory 8) Territory rules and governance 9) Realignment process 10) Sales capacity planning 11) Technology and tools needed",
+          "tags": ["territory-planning", "sales-ops", "strategy"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "sales014",
+          "title": "Customer Onboarding Designer",
+          "description": "Create exceptional onboarding experiences",
+          "prompt": "You are a customer onboarding specialist. Design an onboarding program for [PRODUCT/SERVICE]. Include: 1) Onboarding journey map 2) Time-to-value optimization 3) Phase-by-phase plan (days 1-7, 8-30, 31-90) 4) Kickoff call agenda 5) Training program 6) Success criteria and milestones 7) Automation and self-service elements 8) Customer enablement materials 9) Check-in cadence 10) Handoff from sales to CS 11) Early warning indicators 12) Feedback collection",
+          "tags": ["onboarding", "customer-success", "adoption"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "sales015",
+          "title": "Competitive Battle Card Creator",
+          "description": "Win deals against competitors",
+          "prompt": "You are a competitive intelligence specialist. Create battle cards for competing against [COMPETITOR] in [MARKET]. Include: 1) Competitor overview and positioning 2) Strengths and weaknesses 3) Key differentiators (you vs. them) 4) Feature comparison matrix 5) Pricing and packaging comparison 6) Customer perception insights 7) Win/loss themes 8) Trap-setting questions 9) Landmine strategies 10) Messaging to counter their strengths 11) Proof points and case studies 12) Sales talk tracks",
+          "tags": ["competitive-intelligence", "battle-cards", "positioning"],
+          "difficulty": "advanced"
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "name": "Social Media & Community",
+      "icon": "📱",
+      "description": "Prompts for social media management, community building, and online engagement",
+      "prompts": [
+        {
+          "id": "social001",
+          "title": "Social Media Content Calendar",
+          "description": "Plan strategic social media content",
+          "prompt": "You are a social media strategist. Create a 30-day content calendar for [BRAND/BUSINESS] on [PLATFORMS]. Include: 1) Content pillars and themes 2) Daily post ideas with captions 3) Content mix (educational/promotional/entertaining) 4) Hashtag strategy 5) Posting times optimized for engagement 6) Visual content suggestions 7) Story/Reel ideas 8) User-generated content opportunities 9) Campaign integration 10) Engagement tactics 11) Analytics to track",
+          "tags": ["content-calendar", "planning", "social-media"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "social002",
+          "title": "Viral Content Creator",
+          "description": "Create shareable viral content",
+          "prompt": "You are a viral content expert. Create viral content ideas for [TOPIC/BRAND] on [PLATFORM]. For each idea provide: 1) Content concept and hook 2) Format (video/carousel/thread/etc.) 3) Opening that stops scrolling 4) Value or entertainment delivery 5) Emotional triggers 6) Call-to-action 7) Shareability factors 8) Timing and trends 9) Hashtags and keywords 10) Success examples. Provide 10 viral-worthy ideas.",
+          "tags": ["viral-content", "engagement", "trends"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "social003",
+          "title": "Community Manager Guide",
+          "description": "Build and manage engaged communities",
+          "prompt": "You are a community management expert. Create a community management strategy for [COMMUNITY/BRAND]. Include: 1) Community mission and values 2) Member journey and lifecycle 3) Engagement tactics and programs 4) Content strategy for community 5) Moderation guidelines and policies 6) Response templates for common scenarios 7) Crisis management protocols 8) Member recognition and rewards 9) Community events and activities 10) Growth strategies 11) Success metrics",
+          "tags": ["community-management", "engagement", "moderation"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "social004",
+          "title": "Instagram Growth Strategist",
+          "description": "Grow Instagram following organically",
+          "prompt": "You are an Instagram growth expert. Create a growth strategy for [ACCOUNT/NICHE]. Provide: 1) Profile optimization (bio, highlights, link strategy) 2) Content strategy (feed, Stories, Reels) 3) Posting frequency and timing 4) Hashtag research and strategy 5) Engagement tactics (DMs, comments, Stories) 6) Collaboration opportunities 7) Instagram features to leverage 8) Analytics tracking 9) Monetization path 10) 90-day action plan 11) Growth benchmarks",
+          "tags": ["instagram", "growth", "organic-reach"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "social005",
+          "title": "LinkedIn Thought Leadership",
+          "description": "Build authority on LinkedIn",
+          "prompt": "You are a LinkedIn expert. Develop a thought leadership strategy for [PROFESSIONAL/TOPIC] on LinkedIn. Include: 1) Personal brand positioning 2) Content pillars and themes 3) Post formats (text, carousel, video, polls) 4) Storytelling techniques 5) Engagement tactics 6) Network growth strategy 7) Publishing long-form articles 8) Comment strategy 9) DM outreach approach 10) LinkedIn features to use 11) 30-day content ideas",
+          "tags": ["linkedin", "thought-leadership", "personal-brand"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "social006",
+          "title": "TikTok Content Strategy",
+          "description": "Create engaging TikTok content",
+          "prompt": "You are a TikTok expert. Create a TikTok strategy for [BRAND/NICHE]. Provide: 1) Content categories that work for the niche 2) 20 video ideas with hooks 3) Trend participation strategy 4) Sound and music selection 5) Editing techniques and effects 6) Caption and hashtag strategy 7) Posting schedule 8) Engagement tactics 9) TikTok algorithm optimization 10) Creator collaborations 11) Analytics to track",
+          "tags": ["tiktok", "video-content", "trends"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "social007",
+          "title": "Social Media Crisis Manager",
+          "description": "Handle social media crises",
+          "prompt": "You are a social media crisis management expert. Create a crisis response plan for [SCENARIO/BRAND]. Include: 1) Crisis identification and classification 2) Response team and roles 3) Initial response timeline 4) Message templates for different scenarios 5) Approval process 6) Platform-specific strategies 7) Monitoring and listening tools 8) Stakeholder communication 9) Recovery and reputation repair 10) Post-crisis analysis 11) Prevention strategies",
+          "tags": ["crisis-management", "reputation", "response"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "social008",
+          "title": "Social Media Ad Campaign",
+          "description": "Design effective social ads",
+          "prompt": "You are a social media advertising expert. Design an ad campaign for [PRODUCT/SERVICE] on [PLATFORM]. Include: 1) Campaign objectives and KPIs 2) Target audience definition 3) Ad creative variations (images, videos, copy) 4) Ad format selection 5) Audience targeting strategy 6) Budget allocation 7) Bidding strategy 8) Landing page optimization 9) A/B testing plan 10) Retargeting approach 11) Measurement and optimization",
+          "tags": ["social-ads", "paid-media", "campaigns"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "social009",
+          "title": "User-Generated Content Campaign",
+          "description": "Drive user-generated content",
+          "prompt": "You are a UGC campaign expert. Design a user-generated content campaign for [BRAND/PRODUCT]. Provide: 1) Campaign concept and theme 2) Participation mechanics 3) Incentives and rewards 4) Content guidelines 5) Hashtag strategy 6) Launch and promotion plan 7) Influencer seeding 8) Content curation and showcasing 9) Rights and permissions 10) Success metrics 11) Campaign timeline 12) Budget breakdown",
+          "tags": ["ugc", "campaigns", "engagement"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "social010",
+          "title": "Twitter/X Engagement Specialist",
+          "description": "Master Twitter/X engagement",
+          "prompt": "You are a Twitter/X expert. Create an engagement strategy for [ACCOUNT/TOPIC]. Include: 1) Profile optimization 2) Tweet types and formats 3) Thread structure and topics 4) Engagement tactics (replies, quotes, RTs) 5) Twitter Spaces strategy 6) Trending topic participation 7) List building and networking 8) DM outreach approach 9) Twitter analytics 10) Growth tactics 11) 30 tweet ideas",
+          "tags": ["twitter", "x", "engagement"],
+          "difficulty": "intermediate"
+        },
+        {
+          "id": "social011",
+          "title": "Social Media Influencer Outreach",
+          "description": "Partner with influencers effectively",
+          "prompt": "You are an influencer marketing specialist. Create an influencer outreach strategy for [CAMPAIGN/BRAND]. Provide: 1) Influencer criteria and tiers 2) Research and vetting process 3) Outreach message templates 4) Partnership proposal structure 5) Content briefs and guidelines 6) Compensation models 7) Contract essentials 8) Campaign timeline 9) Content approval process 10) Performance tracking 11) Relationship management 12) ROI measurement",
+          "tags": ["influencer-marketing", "partnerships", "outreach"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "social012",
+          "title": "Social Listening Analyst",
+          "description": "Monitor and analyze social conversations",
+          "prompt": "You are a social listening expert. Create a social listening strategy for [BRAND/INDUSTRY]. Include: 1) Keywords and topics to monitor 2) Tools and platforms setup 3) Sentiment analysis approach 4) Competitor monitoring 5) Trend identification 6) Customer insight extraction 7) Crisis detection 8) Reporting dashboard 9) Actionable insights framework 10) Team workflows 11) Response protocols",
+          "tags": ["social-listening", "monitoring", "insights"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "social013",
+          "title": "Social Media Caption Writer",
+          "description": "Write compelling social media captions",
+          "prompt": "You are a social media copywriter. Write 20 caption variations for [POST TYPE/TOPIC] on [PLATFORM]. For each caption include: 1) Hook that stops scrolling 2) Value or story delivery 3) Emotional connection 4) Call-to-action 5) Relevant hashtags 6) Optimal length for platform 7) Emoji usage 8) Questions or engagement prompts. Provide captions for different goals: awareness, engagement, conversion, education.",
+          "tags": ["copywriting", "captions", "content"],
+          "difficulty": "beginner"
+        },
+        {
+          "id": "social014",
+          "title": "Discord Community Builder",
+          "description": "Build thriving Discord communities",
+          "prompt": "You are a Discord community expert. Design a Discord server for [COMMUNITY/BRAND]. Include: 1) Server structure and channels 2) Roles and permissions system 3) Onboarding flow 4) Rules and guidelines 5) Engagement activities and events 6) Bot integration and automation 7) Moderation strategy 8) Member recognition 9) Growth tactics 10) Monetization options 11) Analytics and insights 12) Community culture development",
+          "tags": ["discord", "community", "engagement"],
+          "difficulty": "advanced"
+        },
+        {
+          "id": "social015",
+          "title": "Social Media Analytics Reporter",
+          "description": "Analyze and report social media performance",
+          "prompt": "You are a social media analyst. Create a comprehensive analytics report for [ACCOUNTS/CAMPAIGN]. Provide: 1) Executive summary 2) Key metrics by platform 3) Engagement analysis 4) Audience insights 5) Content performance ranking 6) Trend analysis 7) Competitor benchmarking 8) ROI calculation 9) Key learnings and insights 10) Optimization recommendations 11) Next month strategy 12) Visual dashboard design",
+          "tags": ["analytics", "reporting", "insights"],
           "difficulty": "advanced"
         }
       ]

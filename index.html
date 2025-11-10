@@ -11,6 +11,9 @@
     <div class="container">
         <!-- Header -->
         <header class="header">
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
             <div class="header-content">
                 <h1 class="main-title">
                     <span class="title-icon">🚀</span>
@@ -52,6 +55,7 @@
                 </div>
 
                 <button id="resetFilters" class="btn-reset">Reset Filters</button>
+                <button id="toggleFavoritesBtn" class="btn-favorites" onclick="toggleFavoritesView()">☆ Show Favorites (0)</button>
             </div>
 
             <div class="stats-container">
@@ -67,6 +71,15 @@
                     <span class="stat-number" id="totalCategories">0</span>
                     <span class="stat-label">Categories</span>
                 </div>
+            </div>
+
+            <div class="export-container">
+                <button class="btn-export" onclick="exportToJSON()">
+                    <span>📥</span> Export JSON
+                </button>
+                <button class="btn-export" onclick="exportToCSV()">
+                    <span>📊</span> Export CSV
+                </button>
             </div>
         </section>
 
@@ -116,10 +129,13 @@
             <div class="modal-difficulty" id="modalDifficulty"></div>
             <div class="prompt-display">
                 <pre class="prompt-text" id="modalPromptText"></pre>
-                <button class="btn-copy" onclick="copyPromptText()">
-                    <span class="copy-icon">📋</span>
-                    Copy Prompt
-                </button>
+                <div class="modal-actions">
+                    <button class="btn-favorite" id="modalFavoriteBtn">☆ Add to Favorites</button>
+                    <button class="btn-copy" onclick="copyPromptText()">
+                        <span class="copy-icon">📋</span>
+                        Copy Prompt
+                    </button>
+                </div>
             </div>
         </div>
     </div>
